@@ -2,3 +2,42 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  background-color: white;
+}
+
+.debug {
+  border: 2px solid red;
+}
+
+.top {
+  background-color: gray;
+  border-radius: 10px;
+  height: 275px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.coupon {
+  background-color: white;
+  border: black dotted 3px;
+  height: 100%;
+}
+
+.header {
+  height: 100%;
+  font-size: 15px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.bottom {
+  background-color: gray;
+  border-radius: 10px;
+  height: 275px;
+  margin: 10px;
+  padding: 20px;
+}
