@@ -4,7 +4,7 @@
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 4em;
 }
 
 h3 {
@@ -55,4 +55,8 @@ body {
 .lineup {
   background-color: gray;
   border-radius: 10px;
+}
+
+.promo {
+  background-color: white;
 }
