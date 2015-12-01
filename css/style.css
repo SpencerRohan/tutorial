@@ -30,7 +30,11 @@ body {
   background-color: white;
   border: black dotted 3px;
   text-align: center;
-  padding: 20px;
+  padding: 50px;
+}
+
+.save {
+  margin: 2px;
 }
 
 .header {
@@ -58,5 +62,10 @@ body {
 }
 
 .promo {
-  background-color: white;
+  padding: 10px;
+}
+
+.logo {
+  text-align: center;
+  padding: 10px;
 }
