@@ -1,6 +1,6 @@
 {
   "name": "training",
-  "description": "#### Phase 1 This section went by pretty well. I had to remind myself some Bootstrap fundementals. I had a little bit of a hiccup when it came to the bottom columns. I had only used flex once before(I think), and I had never used it with Bootstrap - so it was a learning moment for sure.",
+  "description": "",
   "main": "index.js",
   "authors": [
     "Spencer Rohan <spencermrohan@gmail.com>"
