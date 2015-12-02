@@ -1,0 +1,22 @@
+{
+  "name": "training",
+  "description": "#### Phase 1 This section went by pretty well. I had to remind myself some Bootstrap fundementals. I had a little bit of a hiccup when it came to the bottom columns. I had only used flex once before(I think), and I had never used it with Bootstrap - so it was a learning moment for sure.",
+  "main": "index.js",
+  "authors": [
+    "Spencer Rohan <spencermrohan@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/SpencerRohan/tutorial",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "training",
+  "version": "1.0.0",
+  "description": "#### Phase 1 This section went by pretty well. I had to remind myself some Bootstrap fundementals. I had a little bit of a hiccup when it came to the bottom columns. I had only used flex once before(I think), and I had never used it with Bootstrap - so it was a learning moment for sure.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SpencerRohan/tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SpencerRohan/tutorial/issues"
+  },
+  "homepage": "https://github.com/SpencerRohan/tutorial",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
