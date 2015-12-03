@@ -11,49 +11,50 @@
     <script src="assets/js/site.js" type="text/javascript"></script>
 
     <?php
+      $companyName = "ACME";
+      $productLine = "Anvil";
       $slogan = "Stop Accelerate Incredibilus in his tracks.";
       $tagline = "Crush pesky roadrunners with ease.";
+      $couponPrice = "$6.00 OFF!";
     ?>
 
   </head>
 
   <body>
-    <div class="container debug">
+    <div class="container back">
       <div class ="row top">
         <div class="col-md-7 col-md-push-5 header">
           <?php
-            echo '<h1 id="headline">'.$slogan.'</h1>
+            echo '<h1 class="headline">'.$slogan.'</h1>
                   <p>'.$tagline.'</p>';
           ?>
-          <div class="row">
-            <div class="col-xs-12 col-md-6 promo">
 
+          <a href="#promo" data-toggle="modal" alt="promo">
+            <button class="btn btn-danger promo-button">WATCH MOVIE</button>
+          </a>
 
-              <a href="#promo" data-toggle="modal" alt="promo">
-                <img class="promo-img" src="https://i.ytimg.com/vi/NpEaa2P7qZI/maxresdefault.jpg">
-              </a>
-
-              <div class="modal fade" id="promo" role="dialog">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" src="//www.youtube.com/embed/NpEaa2P7qZI"></iframe>
-                    </div>
-                  </div>
+          <div class="modal fade" id="promo" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/NpEaa2P7qZI">
+                  </iframe>
                 </div>
               </div>
             </div>
-
-            <div class="col-xs-12 col-md-6 logo">
-              <img src="http://placehold.it/125x145" alt="logo">
-              <p>[LOGO]</p>
-            </div>
           </div>
+
         </div>
 
         <div class="col-md-4 col-md-pull-7 coupon">
-          <h1>$6.00 OFF</h1>
-          <h5>on ACME Anvil</h5>
+          <h1 class="coupon-price">
+            <?php
+              if($couponPrice){
+                echo $couponPrice;
+              }
+            ?>
+          </h1>
+          <h5>on <?php echo $companyName." ".$productLine ?></h5>
           <button class="btn btn-danger save">$$ Get a Coupon</button>
         </div>
       </div>

@@ -13,6 +13,9 @@
   @font-heading: @ralewaybold;
   @font-logo:    @anchorjack;
 
+@background: "../images/background.png";
+  @image-background: url(@background) center;
+
 * {
   margin: 0;
   padding: 0;
@@ -38,31 +41,36 @@ h3 {
   margin: 0;
 }
 
-#headline {
+.headline {
   font-family: @font-heading;
   font-size: 3em;
   text-transform: uppercase;
 }
 
 body {
-  background-color: white;
+  background-color: @gray;
 }
 
+.back {
+    background: @image-background;
+    background-size: 100% 100%;
+}
 
 .top {
-  background-color: gray;
-  border: solid black 2px;
-  border-radius: 10px;
   margin-bottom: 5px;
   margin-top: 10px;
   padding: 20px;
 }
 
 .coupon {
-  background-color: white;
-  border: black dotted 3px;
+  background-color:rgba(255, 255, 255, 0.6);
+  border: black dashed 3px;
   padding: 50px;
   text-align: center;
+}
+
+.coupon-price {
+  font-size: 3em;
 }
 
 .save {
@@ -79,19 +87,14 @@ body {
   text-align: center;
 }
 
-.promo-img {
-  max-width: 300px;
+.promo-button {
+
 }
 
-.logo {
-  padding: 10px;
-  text-align: center;
+.bottom {
+  background-color: white;
 }
-
 .retail {
-  background-color: gray;
-  border: solid black 2px;
-  border-radius: 10px;
   margin-bottom: 5px;
   padding: 10px;
 }
@@ -109,9 +112,6 @@ body {
 }
 
 .lineup {
-  background-color: gray;
-  border: solid black 2px;
-  border-radius: 10px;
   margin-bottom: 5px;
   padding: 10px;
 }

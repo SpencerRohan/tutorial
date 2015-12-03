@@ -22,7 +22,7 @@
          url('raleway-bold-webfont.woff') format('woff'),
          url('raleway-Bold-webfont.ttf') format('truetype'),
          url('raleway-bold-webfont.svg#ralewaybold') format('svg');
-    font-weight: bold;
+    font-weight: bolder;
     font-style: normal;
 
 }
