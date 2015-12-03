@@ -6732,6 +6732,9 @@ button.close {
 .debug {
   border: 2px solid #9e0b0f;
 }
+a {
+  text-decoration: none;
+}
 p {
   font-family: 'raleway';
   font-size: 1.5em;
@@ -6753,6 +6756,17 @@ h3 {
 body {
   background-color: #bbbbbb;
 }
+.logo-bar {
+  background-color: #000000;
+  height: 30px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+.logo {
+  max-height: 7em;
+}
 .back {
   background: url("../images/background.png") center;
   background-size: 100% 100%;
@@ -6761,20 +6775,26 @@ body {
 .top {
   margin-top: 10%;
   padding: 20px;
+  padding-bottom: 60px;
 }
 .coupon {
   background-color: rgba(255, 255, 255, 0.6);
   border: black dashed 3px;
+  box-shadow: 0px 0px 18px 1px gray;
   margin-top: 20px;
   padding: 50px;
   text-align: center;
-  box-shadow: 0px 0px 18px 1px gray;
 }
 .coupon-price {
   font-size: 3em;
 }
 .save {
+  background-color: #9e0b0f;
+  border-radius: 100px;
   margin: 2px;
+  padding: 3px 3px 3px 3px;
+  text-align: center;
+  height: 40px;
 }
 .header {
   font-size: 15px;
@@ -6783,6 +6803,17 @@ body {
 .promo {
   padding: 10px;
   text-align: center;
+}
+.promo-button {
+  background-color: #9e0b0f;
+  border-radius: 100px;
+  padding: 3px 20px 3px 3px;
+  text-align: center;
+}
+.play {
+  height: 30px;
+  margin-right: 5px;
+  margin-left: 0;
 }
 .bottom {
   background-color: white;

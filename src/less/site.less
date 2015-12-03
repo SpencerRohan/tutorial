@@ -1,7 +1,7 @@
 @black: #000000;
-@gray:  #bbbbbb;
+@ltgray:  #bbbbbb;
 @red:   #9e0b0f;
-  @color-background: @gray;
+  @color-background: @ltgray;
   @color-button:     @red;
   @color-content:    @black;
   @color-vendor:     @red;
@@ -23,6 +23,10 @@
 
 .debug {
   border: 2px solid @red;
+}
+
+a {
+  text-decoration: none;
 }
 
 p {
@@ -48,26 +52,41 @@ h3 {
 }
 
 body {
-  background-color: @gray;
+  background-color: @ltgray;
+}
+
+.logo-bar {
+  background-color: @black;
+  height: 30px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo {
+  max-height: 7em;
 }
 
 .back {
     background: @image-background;
     background-size: 100% 100%;
-    box-shadow: 15px 45px 20px -15px gray, -15px 45px 20px -15px gray;
+    box-shadow: 15px 45px 20px -15px gray,
+                -15px 45px 20px -15px gray;
 }
 .top {
   margin-top: 10%;
   padding: 20px;
+  padding-bottom: 60px;
 }
 
 .coupon {
   background-color:rgba(255, 255, 255, 0.6);
   border: black dashed 3px;
+  box-shadow: 0px 0px 18px 1px gray;
   margin-top: 20px;
   padding: 50px;
   text-align: center;
-  box-shadow: 0px 0px 18px 1px gray;
 }
 
 .coupon-price {
@@ -75,7 +94,13 @@ body {
 }
 
 .save {
+  background-color: @red;
+  border-radius: 100px;
   margin: 2px;
+  padding: 3px 3px 3px 3px;
+  text-align: center;
+  height: 40px;
+
 }
 
 .header {
@@ -90,12 +115,22 @@ body {
 }
 
 .promo-button {
+  background-color: @red;
+  border-radius: 100px;
+  padding: 3px 20px 3px 3px;
+  text-align: center;
+}
 
+.play {
+  height: 30px;
+  margin-right: 5px;
+  margin-left: 0;
 }
 
 .bottom {
   background-color: white;
-    box-shadow: -15px 15px 20px -15px gray, 15px 15px 20px -15px gray;
+  box-shadow: -15px 15px 20px -15px gray,
+              15px 15px 20px -15px gray;
 }
 .retail {
   margin-bottom: 5px;

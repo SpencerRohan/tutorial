@@ -21,6 +21,9 @@
   </head>
 
   <body>
+    <div class="logo-bar">
+      <img class="logo" src="assets/images/block_title.png" >
+    </div>
     <div class="container back box-shadow">
       <div class ="row top">
         <div class="col-md-7 col-md-push-5 header">
@@ -30,7 +33,10 @@
           ?>
 
           <a href="#promo" data-toggle="modal" alt="promo"><br>
-            <button class="btn btn-danger promo-button">WATCH MOVIE</button>
+            <button class="btn btn-danger promo-button">
+              <img class="play" src="assets/images/play.png">
+              WATCH VIDEO
+            </button>
           </a>
 
           <div class="modal fade" id="promo" role="dialog">
@@ -55,7 +61,7 @@
             ?>
           </h1>
           <h5>on <?php echo $companyName." ".$productLine ?></h5>
-          <button class="btn btn-danger save">$$ Get a Coupon</button>
+          <button class="btn btn-danger save">GET COUPON NOW</button>
         </div>
       </div>
     </div>
