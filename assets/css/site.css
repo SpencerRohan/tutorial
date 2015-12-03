@@ -6768,6 +6768,7 @@ body {
   margin-top: 20px;
   padding: 50px;
   text-align: center;
+  box-shadow: 0px 0px 18px 1px gray;
 }
 .coupon-price {
   font-size: 3em;
