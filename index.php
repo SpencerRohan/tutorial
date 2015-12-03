@@ -10,15 +10,21 @@
     <link rel="stylesheet" type="text/css" href="assets/css/site.css">
     <script src="assets/js/site.js" type="text/javascript"></script>
 
+    <?php
+      $slogan = "Stop Accelerate Incredibilus in his tracks.";
+      $tagline = "Crush pesky roadrunners with ease.";
+    ?>
+
   </head>
 
   <body>
     <div class="container debug">
       <div class ="row top">
         <div class="col-md-7 col-md-push-5 header">
-          <h3>Here's the heading message.</h3>
-          <p>And some ipsum, lorem ipsum dolor sit amet, gidor cons. Omare accumsan, blandit sed diam.</p>
-
+          <?php
+            echo '<h1 id="headline">'.$slogan.'</h1>
+                  <p>'.$tagline.'</p>';
+          ?>
           <div class="row">
             <div class="col-xs-12 col-md-6 promo">
 

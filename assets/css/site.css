@@ -6734,6 +6734,7 @@ button.close {
 }
 p {
   font-family: 'raleway';
+  font-size: 1.5em;
   padding-top: 4px;
 }
 h1 {
@@ -6743,6 +6744,11 @@ h1 {
 h3 {
   font-family: 'raleway-bold';
   margin: 0;
+}
+#headline {
+  font-family: 'raleway-bold';
+  font-size: 3em;
+  text-transform: uppercase;
 }
 body {
   background-color: white;
