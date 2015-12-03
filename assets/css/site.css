@@ -6730,15 +6730,18 @@ button.close {
   padding: 0;
 }
 .debug {
-  border: 2px solid red;
+  border: 2px solid #9e0b0f;
 }
 p {
+  font-family: 'raleway';
   padding-top: 4px;
 }
 h1 {
+  font-family: 'raleway-bold';
   font-size: 4em;
 }
 h3 {
+  font-family: 'raleway-bold';
   margin: 0;
 }
 body {

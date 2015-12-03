@@ -1,21 +1,37 @@
+@gray: #bbbbbb;
+@red:  #9e0b0f;
+  @color-background: @gray;
+  @color-button:     @red;
+  @color-vendor:     @red;
+
+@anchorjack:  'anchorjack';
+@ralewaybold: 'raleway-bold';
+@raleway:     'raleway';
+  @font-content: @raleway;
+  @font-heading: @ralewaybold;
+  @font-logo:    @anchorjack;
+
 * {
   margin: 0;
   padding: 0;
 }
 
 .debug {
-  border: 2px solid red;
+  border: 2px solid @red;
 }
 
 p {
+  font-family: @font-content;
   padding-top: 4px;
 }
 
 h1 {
+  font-family: @font-heading;
   font-size: 4em;
 }
 
 h3 {
+  font-family: @font-heading;
   margin: 0;
 }
 

@@ -4,6 +4,7 @@ var gulp   = require('gulp'),
 
 gulp.task('process-less', function(){
   gulp.src(['src/less/import.less',
+            'src/less/font.less',
             'src/less/site.less'])
     .pipe(less())
     .pipe(concat('site.css'))
