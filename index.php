@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <div class="container back">
+    <div class="container back box-shadow">
       <div class ="row top">
         <div class="col-md-7 col-md-push-5 header">
           <?php
@@ -29,7 +29,7 @@
                   <p>'.$tagline.'</p>';
           ?>
 
-          <a href="#promo" data-toggle="modal" alt="promo">
+          <a href="#promo" data-toggle="modal" alt="promo"><br>
             <button class="btn btn-danger promo-button">WATCH MOVIE</button>
           </a>
 
