@@ -1,6 +1,9 @@
 # Front-End Track
 
 #### Phase 1
+Wireframe Reference:
+![image](assets/wireframe.png)
+
 This section went by pretty well. I had to remind myself some Bootstrap fundementals. I had a little bit of a hiccup when it came to the bottom columns. I had only used flex once before(I think), and I had never used it with Bootstrap - so it was a learning moment for sure.
 
 I played with the idea of pushing the columns when it came to the mobile version. My thought process on that was the client probably would want their header before the coupon.
@@ -18,6 +21,9 @@ Confident in coding scale 1-10, Phase 1 was about an 8 or 9. I got stuck messing
 
 
 #### Phase 2
+Comp Reference:
+![image](assets/images/landing-page-comp.jpg)
+
 This phase was great. I was able to get super nerdy into my naming conventions, and css styling. Probably could use some cleaning up still, any notes/pro-tips are welcomed. The beginning portion of this was a little shaky at best - setting up bower and gulp(Probably could use some more practice with it).
 
 ##### Questions and Topics:
