@@ -2,7 +2,7 @@
 
 #### Phase 1
 Wireframe Reference:
-![image](assets/wireframe.png)
+![image](assets/images/wireframe.png)
 
 This section went by pretty well. I had to remind myself some Bootstrap fundementals. I had a little bit of a hiccup when it came to the bottom columns. I had only used flex once before(I think), and I had never used it with Bootstrap - so it was a learning moment for sure.
 
