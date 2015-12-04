@@ -57,7 +57,8 @@
 
         </div>
 
-        <div class="col-md-4 col-md-pull-7 coupon">
+        <div class="col-md-4 col-md-pull-7">
+        <div class="coupon">
           <h1 class="coupon-price">
             <?php
               if($couponPrice){
@@ -65,9 +66,10 @@
               }
             ?>
           </h1>
-          <h5>on <?php echo $companyName." ".$productLine ?></h5>
+          <h4>on <?php echo $companyName." ".$productLine ?></h4>
           <button class="btn btn-danger save">GET COUPON NOW</button>
         </div>
+      </div>
       </div>
     </div>
 

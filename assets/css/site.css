@@ -6743,6 +6743,12 @@ h3 {
   font-family: 'raleway-bold';
   margin: 0;
 }
+h4 {
+  font-size: 1.1em;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: 'raleway-bold';
+}
 body {
   background-color: #bbbbbb;
   color: #000000;
@@ -6773,17 +6779,23 @@ body {
   border: black dashed 3px;
   box-shadow: 0px 0px 18px 1px gray;
   margin-top: 20px;
-  padding: 50px;
+  padding: 10% 10%;
   text-align: center;
 }
 .coupon-price {
   font-size: 3em;
+  text-shadow: 1px 0;
+  margin-bottom: 0;
+  width: 100%;
 }
 .save {
   background-color: #9e0b0f;
   border-radius: 100px;
-  margin: 2px;
-  padding: 3px 3px 3px 3px;
+  font-size: 12px;
+  font-family: 'raleway';
+  margin: auto;
+  width: 70%;
+  padding: 3px 20px 3px 20px;
   text-align: center;
   height: 40px;
 }
@@ -6829,6 +6841,18 @@ body {
   padding-top: 14px;
   text-align: center;
 }
+.left-container a {
+  color: #000000;
+  font-family: 'raleway';
+}
+.left-container a:hover {
+  color: #9e0b0f;
+  text-decoration: none;
+}
+.left-container a:visited {
+  color: #000000;
+  text-decoration: none;
+}
 .retail-circle {
   background-color: #9e0b0f;
   border-radius: 999px;
@@ -6842,7 +6866,7 @@ body {
 .bottom-right {
   border-bottom: solid 1px #bbbbbb;
   margin-bottom: 5px;
-  padding: 20px 10px;
+  padding: 20px 10px 20px 25px;
 }
 .bottom-right p {
   font-family: 'raleway';
@@ -6850,7 +6874,21 @@ body {
   padding-top: 14px;
 }
 footer {
+  margin-top: 10px;
   text-align: right;
+  text-transform: lowercase;
+}
+footer a {
+  color: #000000;
+  font-family: 'raleway';
+}
+footer a:hover {
+  color: #9e0b0f;
+  text-decoration: none;
+}
+footer a:visited {
+  color: #000000;
+  text-decoration: none;
 }
 @media screen and (min-width: 893px) {
   .bottom-right {

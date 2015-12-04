@@ -43,6 +43,12 @@ h3 {
   margin: 0;
 }
 
+h4 {
+  font-size: 1.1em;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: @font-heading;
+}
 body {
   background-color: @ltgray;
   color: @black;
@@ -80,19 +86,25 @@ body {
   border: black dashed 3px;
   box-shadow: 0px 0px 18px 1px gray;
   margin-top: 20px;
-  padding: 50px;
+  padding: 10% 10%;
   text-align: center;
 }
 
 .coupon-price {
   font-size: 3em;
+  text-shadow: 1px 0;
+  margin-bottom: 0;
+  width: 100%;
 }
 
 .save {
   background-color: @red;
   border-radius: 100px;
-  margin: 2px;
-  padding: 3px 3px 3px 3px;
+  font-size: 12px;
+  font-family: @font-content;
+  margin: auto;
+  width: 70%;
+  padding: 3px 20px 3px 20px;
   text-align: center;
   height: 40px;
 
@@ -148,6 +160,18 @@ body {
 .left-container {
   padding-top: 14px;
   text-align: center;
+  a {
+    color: @black;
+    font-family: @font-content;
+    &:hover {
+      color: @red;
+      text-decoration: none;
+    }
+    &:visited {
+      color: @black;
+      text-decoration: none;
+    }
+  }
 }
 
 .retail-circle {
@@ -159,12 +183,13 @@ body {
 }
 .retail-link {
   width: 30%;
+
 }
 
 .bottom-right {
   border-bottom: solid 1px @ltgray;
   margin-bottom: 5px;
-  padding: 20px 10px;
+  padding: 20px 10px 20px 25px;
   p {
     font-family: @font-content;
     font-size: 1.15em;
@@ -173,7 +198,21 @@ body {
 }
 
 footer {
+  margin-top: 10px;
   text-align: right;
+  text-transform: lowercase;
+  a {
+    color: @black;
+    font-family: @font-content;
+    &:hover {
+      color: @red;
+      text-decoration: none;
+    }
+    &:visited {
+      color: @black;
+      text-decoration: none;
+    }
+  }
 }
 
 @media screen and (min-width: 893px) {
