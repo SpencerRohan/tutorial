@@ -6,7 +6,6 @@
 
     <title>ACME</title>
 
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="assets/css/site.css">
     <script src="assets/js/site.js" type="text/javascript"></script>
 
