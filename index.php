@@ -69,10 +69,16 @@
 
     <div class="container">
       <div class ="row bottom">
-        <div class="col-md-6 col-sm-12 retail">
-            <h3>Available at these Fine Retailers</h3><br>
 
-            <div class= "row bottom-left">
+        <div class="col-md-6 col-sm-12 col-md-push-6 bottom-right">
+            <h3>ACME Product Line-up</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-md-pull-6 bottom-left">
+            <h3>Available at these Fine Retailers</h3>
+            <div class= "row left-container">
               <a href="#" class="btn retail-link"><img src="http://placehold.it/50x50" alt="Venture Link"><br>Venture</a>
 
               <a href="#" class="btn retail-link"><img src="http://placehold.it/50x50" alt="Marshall Link"><br>Marshall Field's</a>
@@ -83,11 +89,6 @@
 
               <a href="#" class="btn retail-link"><img src="http://placehold.it/50x50" alt="Woolworth Link"><br>Woolworth</a>
             </div>
-        </div>
-        <div class="col-md-6 col-sm-12 bottom-right">
-            <h3>ACME Product Line-up</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-
         </div>
       </div>
     </div>

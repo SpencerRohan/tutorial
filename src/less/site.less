@@ -29,11 +29,7 @@ a {
   text-decoration: none;
 }
 
-p {
-  font-family: @font-content;
-  font-size: 1.5em;
-  padding-top: 4px;
-}
+
 
 h1 {
   font-family: @font-heading;
@@ -53,6 +49,7 @@ h3 {
 
 body {
   background-color: @ltgray;
+  color: @black;
 }
 
 .logo-bar {
@@ -106,6 +103,11 @@ body {
 .header {
   font-size: 15px;
   margin-bottom: 5px;
+  p {
+    font-family: @font-content;
+    font-size: 1.5em;
+    padding-top: 4px;
+  }
 }
 
 
@@ -131,13 +133,16 @@ body {
   background-color: white;
   box-shadow: -15px 15px 20px -15px gray,
               15px 15px 20px -15px gray;
+  padding: 20px 15px;
 }
-.retail {
+.bottom-left {
+  border-bottom: solid 1px @ltgray;
   margin-bottom: 5px;
   padding: 10px;
 }
 
-.bottom-left {
+.left-container {
+  padding-top: 14px;
   text-align: center;
 }
 
@@ -149,7 +154,9 @@ body {
   margin-bottom: 5px;
   padding: 10px;
   p {
-    font-size: 1.2em;
+    font-family: @font-content;
+    font-size: 1.15em;
+    padding-top: 14px;
   }
 }
 
@@ -158,16 +165,14 @@ footer {
 }
 
 @media (min-width: 893px) {
-  .bottom {
-    display: flex;
-  }
+
 
   .bottom-right {
-    margin-right: 5px;
+    border-left: solid 1px @ltgray;
   }
 
   .bottom-left {
-    margin-left: 5px;
+    border-bottom: none;
   }
   .top {
     margin-bottom: 10px;

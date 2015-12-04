@@ -6735,11 +6735,6 @@ button.close {
 a {
   text-decoration: none;
 }
-p {
-  font-family: 'raleway';
-  font-size: 1.5em;
-  padding-top: 4px;
-}
 h1 {
   font-family: 'raleway-bold';
   font-size: 4em;
@@ -6755,6 +6750,7 @@ h3 {
 }
 body {
   background-color: #bbbbbb;
+  color: #000000;
 }
 .logo-bar {
   background-color: #000000;
@@ -6800,6 +6796,11 @@ body {
   font-size: 15px;
   margin-bottom: 5px;
 }
+.header p {
+  font-family: 'raleway';
+  font-size: 1.5em;
+  padding-top: 4px;
+}
 .promo {
   padding: 10px;
   text-align: center;
@@ -6818,12 +6819,15 @@ body {
 .bottom {
   background-color: white;
   box-shadow: -15px 15px 20px -15px gray, 15px 15px 20px -15px gray;
+  padding: 20px 15px;
 }
-.retail {
+.bottom-left {
+  border-bottom: solid 1px #bbbbbb;
   margin-bottom: 5px;
   padding: 10px;
 }
-.bottom-left {
+.left-container {
+  padding-top: 14px;
   text-align: center;
 }
 .retail-link {
@@ -6834,20 +6838,19 @@ body {
   padding: 10px;
 }
 .bottom-right p {
-  font-size: 1.2em;
+  font-family: 'raleway';
+  font-size: 1.15em;
+  padding-top: 14px;
 }
 footer {
   text-align: right;
 }
 @media (min-width: 893px) {
-  .bottom {
-    display: flex;
-  }
   .bottom-right {
-    margin-right: 5px;
+    border-left: solid 1px #bbbbbb;
   }
   .bottom-left {
-    margin-left: 5px;
+    border-bottom: none;
   }
   .top {
     margin-bottom: 10px;
