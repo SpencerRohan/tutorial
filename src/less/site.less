@@ -136,7 +136,7 @@ body {
   padding: 20px 15px;
 }
 .bottom-left {
-  border-bottom: solid 1px @ltgray;
+
   margin-bottom: 5px;
   padding: 10px;
 }
@@ -151,6 +151,7 @@ body {
 }
 
 .bottom-right {
+  border-bottom: solid 1px @ltgray;
   margin-bottom: 5px;
   padding: 10px;
   p {
@@ -168,11 +169,12 @@ footer {
 
 
   .bottom-right {
-    border-left: solid 1px @ltgray;
+    border-bottom: none;
+
   }
 
   .bottom-left {
-    border-bottom: none;
+    border-right: solid 1px @ltgray;
   }
   .top {
     margin-bottom: 10px;

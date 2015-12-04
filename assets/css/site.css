@@ -6822,7 +6822,6 @@ body {
   padding: 20px 15px;
 }
 .bottom-left {
-  border-bottom: solid 1px #bbbbbb;
   margin-bottom: 5px;
   padding: 10px;
 }
@@ -6834,6 +6833,7 @@ body {
   width: 25%;
 }
 .bottom-right {
+  border-bottom: solid 1px #bbbbbb;
   margin-bottom: 5px;
   padding: 10px;
 }
@@ -6847,10 +6847,10 @@ footer {
 }
 @media (min-width: 893px) {
   .bottom-right {
-    border-left: solid 1px #bbbbbb;
+    border-bottom: none;
   }
   .bottom-left {
-    border-bottom: none;
+    border-right: solid 1px #bbbbbb;
   }
   .top {
     margin-bottom: 10px;
