@@ -6724,7 +6724,27 @@ button.close {
     display: none !important;
   }
 }
-
+@font-face {
+  font-family: 'anchorjack';
+  src: url('../../assets/fonts/anchorjack/anchorjack-webfont.eot');
+  src: url('../../assets/fonts/anchorjack/anchorjack-webfont.eot?#iefix') format('embedded-opentype'), url('../../assets/fonts/anchorjack/anchorjack-webfont.woff2') format('woff2'), url('../../assets/fonts/anchorjack/anchorjack-webfont.woff') format('woff'), url('../../assets/fonts/anchorjack/anchorjack-webfont.ttf') format('truetype'), url('../../assets/fonts/anchorjack/anchorjack-webfont.svg#anchor_jackregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ralewaybold';
+  src: url('../../assets/fonts/raleway/raleway-bold-webfont.eot');
+  src: url('../../assets/fonts/raleway/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../../assets/fonts/raleway/raleway-bold-webfont.woff2') format('woff2'), url('../../assets/fonts/raleway/raleway-bold-webfont.woff') format('woff'), url('../../assets/fonts/raleway/raleway-bold-webfont.ttf') format('truetype'), url('../../assets/fonts/raleway/raleway-bold-webfont.svg#ralewaybold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'raleway';
+  src: url('../../assets/fonts/raleway/raleway-regular-webfont.eot');
+  src: url('../../assets/fonts/raleway/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../assets/fonts/raleway/raleway-regular-webfont.woff2') format('woff2'), url('../../assets/fonts/raleway/raleway-regular-webfont.woff') format('woff'), url('../../assets/fonts/raleway/raleway-regular-webfont.ttf') format('truetype'), url('../../assets/fonts/raleway/raleway-regular-webfont.svg#ralewayregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -6788,16 +6808,18 @@ body {
   margin-bottom: 0;
   width: 100%;
 }
-.save {
+.button {
   background-color: #9e0b0f;
   border-radius: 100px;
   font-size: 12px;
   font-family: 'raleway';
-  margin: auto;
-  width: 70%;
-  padding: 3px 20px 3px 20px;
-  text-align: center;
   height: 40px;
+  margin: auto;
+  text-align: center;
+}
+.save-button {
+  padding: 3px 20px 3px 20px;
+  width: 70%;
 }
 .header {
   font-size: 15px;
@@ -6818,10 +6840,7 @@ body {
   text-align: center;
 }
 .promo-button {
-  background-color: #9e0b0f;
-  border-radius: 100px;
   padding: 3px 20px 3px 3px;
-  text-align: center;
 }
 .play {
   height: 30px;
@@ -6866,7 +6885,7 @@ body {
 .bottom-right {
   border-bottom: solid 1px #bbbbbb;
   margin-bottom: 5px;
-  padding: 20px 10px 20px 25px;
+  padding: 20px 10px;
 }
 .bottom-right p {
   font-family: 'raleway';
@@ -6890,12 +6909,13 @@ footer a:visited {
   color: #000000;
   text-decoration: none;
 }
-@media screen and (min-width: 893px) {
+@media (min-width:992px) {
   .bottom-right {
     border-bottom: none;
+    padding: 20px 10px 20px 25px;
   }
   .bottom-left {
-    border-right: solid 1px #bbbbbb;
+    border-right: 1px solid #bbbbbb;
   }
   .top {
     margin-bottom: 10px;

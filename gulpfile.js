@@ -3,9 +3,7 @@ var gulp   = require('gulp'),
     concat = require('gulp-concat');
 
 gulp.task('process-less', function(){
-  gulp.src(['src/less/import.less',
-            'src/less/font.less',
-            'src/less/site.less'])
+  gulp.src(['src/less/site.less'])
     .pipe(less())
     .pipe(concat('site.css'))
     .pipe(gulp.dest('assets/css'))

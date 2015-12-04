@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <title>ACME</title>
 
@@ -38,7 +38,7 @@
           ?>
 
           <a href="#promo" data-toggle="modal" alt="promo"><br>
-            <button class="btn btn-danger promo-button">
+            <button class="btn btn-danger button promo-button">
               <img class="play" src="assets/images/play.png">
               WATCH VIDEO
             </button>
@@ -67,7 +67,7 @@
             ?>
           </h1>
           <h4>on <?php echo $companyName." ".$productLine ?></h4>
-          <button class="btn btn-danger save">GET COUPON NOW</button>
+          <button class="btn btn-danger button save-button">GET COUPON NOW</button>
         </div>
       </div>
       </div>

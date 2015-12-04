@@ -1,22 +1,6 @@
-@black:  #000000;
-@ltgray: #bbbbbb;
-@red:    #9e0b0f;
-  @color-background: @ltgray;
-  @color-button:     @red;
-  @color-content:    @black;
-  @color-vendor:     @red;
-
-@anchorjack:  'anchorjack';
-@raleway:     'raleway';
-@ralewaybold: 'raleway-bold';
-  @font-content: @raleway;
-  @font-heading: @ralewaybold;
-  @font-logo:    @anchorjack;
-
-@background: "../images/background.png";
-  @image-background: url(@background) center;
-
-@circle: 999px;
+@import "../vendor/bootstrap/less/bootstrap.less";
+@import "_variables.less";
+@import "font.less";
 
 * {
   margin: 0;
@@ -30,7 +14,6 @@
 a {
   text-decoration: none;
 }
-
 
 
 h1 {
@@ -49,6 +32,7 @@ h4 {
   margin-bottom: 15px;
   font-family: @font-heading;
 }
+
 body {
   background-color: @ltgray;
   color: @black;
@@ -97,17 +81,20 @@ body {
   width: 100%;
 }
 
-.save {
+
+.button {
   background-color: @red;
   border-radius: 100px;
   font-size: 12px;
   font-family: @font-content;
-  margin: auto;
-  width: 70%;
-  padding: 3px 20px 3px 20px;
-  text-align: center;
   height: 40px;
+  margin: auto;
+  text-align: center;
+}
 
+.save-button {
+  padding: 3px 20px 3px 20px;
+  width: 70%;
 }
 
 .header {
@@ -133,10 +120,7 @@ body {
 }
 
 .promo-button {
-  background-color: @red;
-  border-radius: 100px;
   padding: 3px 20px 3px 3px;
-  text-align: center;
 }
 
 .play {
@@ -152,10 +136,10 @@ body {
   padding: 20px 15px;
 }
 .bottom-left {
-
   margin-bottom: 5px;
   padding: 20px 10px;
 }
+
 
 .left-container {
   padding-top: 14px;
@@ -189,7 +173,7 @@ body {
 .bottom-right {
   border-bottom: solid 1px @ltgray;
   margin-bottom: 5px;
-  padding: 20px 10px 20px 25px;
+  padding: 20px 10px;
   p {
     font-family: @font-content;
     font-size: 1.15em;
@@ -215,13 +199,16 @@ footer {
   }
 }
 
-@media screen and (min-width: 893px) {
+
+@media(@md-min) {
+
   .bottom-right {
     border-bottom: none;
+    padding: 20px 10px 20px 25px;
   }
 
   .bottom-left {
-    border-right: solid 1px @ltgray;
+    border-right: 1px solid @ltgray;
   }
 
   .top {
