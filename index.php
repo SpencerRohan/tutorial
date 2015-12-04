@@ -37,7 +37,7 @@
                   <p>'.$tagline.'</p>';
           ?>
 
-          <a href="#promo" data-toggle="modal" alt="promo"><br>
+          <br><a href="#promo" data-toggle="modal" alt="promo">
             <button class="btn btn-danger button promo-button">
               <img class="promo-play" src="assets/images/play.png">
               WATCH VIDEO
