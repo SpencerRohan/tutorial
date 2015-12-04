@@ -32,6 +32,7 @@
     <div class="container back box-shadow">
       <div class ="row top">
         <div class="col-md-7 col-md-push-5 header">
+
           <?php
             echo '<h1 class="headline">'.$slogan.'</h1>
                   <p>'.$tagline.'</p>';
@@ -39,7 +40,7 @@
 
           <a href="#promo" data-toggle="modal" alt="promo"><br>
             <button class="btn btn-danger button promo-button">
-              <img class="play" src="assets/images/play.png">
+              <img class="promo-play" src="assets/images/play.png">
               WATCH VIDEO
             </button>
           </a>
@@ -58,18 +59,20 @@
         </div>
 
         <div class="col-md-4 col-md-pull-7">
-        <div class="coupon">
-          <h1 class="coupon-price">
-            <?php
-              if($couponPrice){
-                echo $couponPrice;
-              }
-            ?>
-          </h1>
-          <h4>on <?php echo $companyName." ".$productLine ?></h4>
-          <button class="btn btn-danger button save-button">GET COUPON NOW</button>
+          <div class="coupon">
+            <h1 class="coupon-price">
+              <?php
+                if($couponPrice){
+                  echo $couponPrice;
+                }
+              ?>
+            </h1>
+            <h4>on <?php echo $companyName." ".$productLine ?></h4>
+            <button class="btn btn-danger button save-button">
+              GET COUPON NOW
+            </button>
+          </div>
         </div>
-      </div>
       </div>
     </div>
 
@@ -79,12 +82,12 @@
         <div class="col-md-6 col-sm-12 col-md-push-6 bottom-right">
             <h3>ACME Product Line-up</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-
         </div>
 
         <div class="col-md-6 col-sm-12 col-md-pull-6 bottom-left">
             <h3>Available at these Fine Retailers</h3>
             <div class= "row left-container">
+
               <?php
                 if ($vendors && count($vendors >= 1)){
                   foreach ($vendors as $name => $link) {
@@ -96,6 +99,7 @@
                       echo "<h3>Check back soon!</h3>";
                 }
               ?>
+
             </div>
         </div>
       </div>
@@ -109,5 +113,6 @@
       <a href="#" alt="Contact">Contact Us</a>
     </div>
   </footer>
+
 </html>
 
