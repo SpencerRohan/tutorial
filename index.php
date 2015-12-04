@@ -61,13 +61,23 @@
         <div class="col-md-4 col-md-pull-7">
           <div class="coupon">
             <h1 class="coupon-price">
+
               <?php
                 if($couponPrice){
                   echo $couponPrice;
-                }
+                } else {
+                    echo "SEE DEALS!";
+                  }
               ?>
+
             </h1>
-            <h4>on <?php echo $companyName." ".$productLine ?></h4>
+            <h4>
+
+              <?php
+                echo "on ".$companyName." ".$productLine;
+              ?>
+
+            </h4>
             <button class="btn btn-danger button save-button">
               GET COUPON NOW
             </button>
@@ -85,23 +95,24 @@
         </div>
 
         <div class="col-md-6 col-sm-12 col-md-pull-6 bottom-left">
-            <h3>Available at these Fine Retailers</h3>
-            <div class= "row left-container">
+          <h3>Available at these Fine Retailers</h3>
+          <div class= "row left-container">
 
-              <?php
-                if ($vendors && count($vendors >= 1)){
-                  foreach ($vendors as $name => $link) {
-                    echo "<a href=".$link."class='btn retail-link'>
-                            <div class='retail-circle'></div>".$name."
-                          </a>";
-                  }
-                } else {
-                      echo "<h3>Check back soon!</h3>";
+            <?php
+              if ($vendors && count($vendors >= 1)){
+                foreach ($vendors as $name => $link) {
+                  echo "<a href=".$link."class='btn retail-link'>
+                          <div class='retail-circle'></div>".$name."
+                        </a>";
                 }
-              ?>
+              } else {
+                    echo "<h3>Check back soon!</h3>";
+              }
+            ?>
 
-            </div>
+          </div>
         </div>
+
       </div>
     </div>
   </body>
