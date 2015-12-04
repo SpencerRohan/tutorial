@@ -18,6 +18,6 @@ gulp.task('process-scripts', function(){
 });
 
 gulp.task('watch', function(){
-  gulp.watch('src/less/site.less', ['process-less'])
+  gulp.watch('src/less/*.less', ['process-less'])
 });
 
