@@ -16,7 +16,11 @@
       $slogan = "Stop Accelerate Incredibilus in his tracks.";
       $tagline = "Crush pesky roadrunners with ease.";
       $couponPrice = "$6.00 OFF!";
-      $vendors = array("Venture", "Zayre", "Woolworth", "Marshall Field's", "Bamberger's");
+      $vendors = array("Venture"          => "'#'",
+                       "Zayre"            => "'#'",
+                       "Woolworth"        => "'#'",
+                       "Marshall Field's" => "'#'",
+                       "Bamberger's"      => "'#'");
     ?>
 
   </head>
@@ -79,15 +83,17 @@
         <div class="col-md-6 col-sm-12 col-md-pull-6 bottom-left">
             <h3>Available at these Fine Retailers</h3>
             <div class= "row left-container">
-              <a href="#" class="btn retail-link"><img src="http://placehold.it/50x50" alt="Venture Link"><br>Venture</a>
-
-              <a href="#" class="btn retail-link"><img src="http://placehold.it/50x50" alt="Marshall Link"><br>Marshall Field's</a>
-
-              <a href="#" class="btn retail-link"><img src="http://placehold.it/50x50" alt="Bamberger's Link"><br>Bamberger's</a>
-
-              <a href="#" class="btn retail-link"><img src="http://placehold.it/50x50" alt="Zayre Link"><br>Zayre</a>
-
-              <a href="#" class="btn retail-link"><img src="http://placehold.it/50x50" alt="Woolworth Link"><br>Woolworth</a>
+              <?php
+                if ($vendors && count($vendors >= 1)){
+                  foreach ($vendors as $name => $link) {
+                    echo "<a href=".$link."class='btn retail-link'>
+                            <div class='retail-circle'></div>".$name."
+                          </a>";
+                  }
+                } else {
+                      echo "<h3>Check back soon!</h3>";
+                }
+              ?>
             </div>
         </div>
       </div>

@@ -16,6 +16,8 @@
 @background: "../images/background.png";
   @image-background: url(@background) center;
 
+@circle: 999px;
+
 * {
   margin: 0;
   padding: 0;
@@ -41,12 +43,6 @@ h3 {
   margin: 0;
 }
 
-.headline {
-  font-family: @font-heading;
-  font-size: 3em;
-  text-transform: uppercase;
-}
-
 body {
   background-color: @ltgray;
   color: @black;
@@ -65,20 +61,22 @@ body {
   max-height: 7em;
 }
 
-.back {
-    background: @image-background;
-    background-size: 100% 100%;
-    box-shadow: 15px 45px 20px -15px gray,
-                -15px 45px 20px -15px gray;
-}
 .top {
   margin-top: 10%;
   padding: 20px;
   padding-bottom: 60px;
 }
 
+.back {
+    background: @image-background;
+    background-size: 100% 100%;
+    box-shadow: 15px 45px 20px -15px gray,
+                -15px 45px 20px -15px gray;
+}
+
+
 .coupon {
-  background-color:rgba(255, 255, 255, 0.6);
+  background-color:rgba(255, 255, 255, 0.7);
   border: black dashed 3px;
   box-shadow: 0px 0px 18px 1px gray;
   margin-top: 20px;
@@ -110,6 +108,12 @@ body {
   }
 }
 
+.headline {
+  font-family: @font-heading;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
 
 .promo {
   padding: 10px;
@@ -138,7 +142,7 @@ body {
 .bottom-left {
 
   margin-bottom: 5px;
-  padding: 10px;
+  padding: 20px 10px;
 }
 
 .left-container {
@@ -146,14 +150,21 @@ body {
   text-align: center;
 }
 
+.retail-circle {
+  background-color: @red;
+  border-radius: @circle;
+  height: 30px;
+  margin: auto;
+  width: 30px;
+}
 .retail-link {
-  width: 25%;
+  width: 30%;
 }
 
 .bottom-right {
   border-bottom: solid 1px @ltgray;
   margin-bottom: 5px;
-  padding: 10px;
+  padding: 20px 10px;
   p {
     font-family: @font-content;
     font-size: 1.15em;
@@ -165,17 +176,15 @@ footer {
   text-align: right;
 }
 
-@media (min-width: 893px) {
-
-
+@media screen and (min-width: 893px) {
   .bottom-right {
     border-bottom: none;
-
   }
 
   .bottom-left {
     border-right: solid 1px @ltgray;
   }
+
   .top {
     margin-bottom: 10px;
   }

@@ -6743,11 +6743,6 @@ h3 {
   font-family: 'raleway-bold';
   margin: 0;
 }
-.headline {
-  font-family: 'raleway-bold';
-  font-size: 3em;
-  text-transform: uppercase;
-}
 body {
   background-color: #bbbbbb;
   color: #000000;
@@ -6763,18 +6758,18 @@ body {
 .logo {
   max-height: 7em;
 }
-.back {
-  background: url("../images/background.png") center;
-  background-size: 100% 100%;
-  box-shadow: 15px 45px 20px -15px gray, -15px 45px 20px -15px gray;
-}
 .top {
   margin-top: 10%;
   padding: 20px;
   padding-bottom: 60px;
 }
+.back {
+  background: url("../images/background.png") center;
+  background-size: 100% 100%;
+  box-shadow: 15px 45px 20px -15px gray, -15px 45px 20px -15px gray;
+}
 .coupon {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
   border: black dashed 3px;
   box-shadow: 0px 0px 18px 1px gray;
   margin-top: 20px;
@@ -6801,6 +6796,11 @@ body {
   font-size: 1.5em;
   padding-top: 4px;
 }
+.headline {
+  font-family: 'raleway-bold';
+  font-size: 3em;
+  text-transform: uppercase;
+}
 .promo {
   padding: 10px;
   text-align: center;
@@ -6823,19 +6823,26 @@ body {
 }
 .bottom-left {
   margin-bottom: 5px;
-  padding: 10px;
+  padding: 20px 10px;
 }
 .left-container {
   padding-top: 14px;
   text-align: center;
 }
+.retail-circle {
+  background-color: #9e0b0f;
+  border-radius: 999px;
+  height: 30px;
+  margin: auto;
+  width: 30px;
+}
 .retail-link {
-  width: 25%;
+  width: 30%;
 }
 .bottom-right {
   border-bottom: solid 1px #bbbbbb;
   margin-bottom: 5px;
-  padding: 10px;
+  padding: 20px 10px;
 }
 .bottom-right p {
   font-family: 'raleway';
@@ -6845,7 +6852,7 @@ body {
 footer {
   text-align: right;
 }
-@media (min-width: 893px) {
+@media screen and (min-width: 893px) {
   .bottom-right {
     border-bottom: none;
   }
