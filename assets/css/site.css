@@ -6823,18 +6823,18 @@ body {
   margin-bottom: 5px;
   padding: 10px;
 }
-.retailers {
+.bottom-left {
   text-align: center;
 }
-.retailtop {
+.retail-link {
   width: 25%;
 }
-.retailbottom {
-  width: 25%;
-}
-.lineup {
+.bottom-right {
   margin-bottom: 5px;
   padding: 10px;
+}
+.bottom-right p {
+  font-size: 1.2em;
 }
 footer {
   text-align: right;
@@ -6843,10 +6843,10 @@ footer {
   .bottom {
     display: flex;
   }
-  .retail {
+  .bottom-right {
     margin-right: 5px;
   }
-  .lineup {
+  .bottom-left {
     margin-left: 5px;
   }
   .top {

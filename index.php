@@ -16,6 +16,7 @@
       $slogan = "Stop Accelerate Incredibilus in his tracks.";
       $tagline = "Crush pesky roadrunners with ease.";
       $couponPrice = "$6.00 OFF!";
+      $vendors = array("Venture", "Zayre", "Woolworth", "Marshall Field's", "Bamberger's");
     ?>
 
   </head>
@@ -71,23 +72,21 @@
         <div class="col-md-6 col-sm-12 retail">
             <h3>Available at these Fine Retailers</h3><br>
 
-            <div class= "row retailers">
-              <a href="#" class="btn retailtop"><img src="http://placehold.it/50x50" alt="Venture Link"><br>Venture</a>
+            <div class= "row bottom-left">
+              <a href="#" class="btn retail-link"><img src="http://placehold.it/50x50" alt="Venture Link"><br>Venture</a>
 
-              <a href="#" class="btn retailtop"><img src="http://placehold.it/50x50" alt="Marshall Link"><br>Marshall Field's</a>
+              <a href="#" class="btn retail-link"><img src="http://placehold.it/50x50" alt="Marshall Link"><br>Marshall Field's</a>
 
-              <a href="#" class="btn retailtop"><img src="http://placehold.it/50x50" alt="Bamberger's Link"><br>Bamberger's</a>
+              <a href="#" class="btn retail-link"><img src="http://placehold.it/50x50" alt="Bamberger's Link"><br>Bamberger's</a>
 
-            </div>
-            <div class= "row retailers">
-              <a href="#" class="btn retailbottom"><img src="http://placehold.it/50x50" alt="Zayre Link"><br>Zayre</a>
+              <a href="#" class="btn retail-link"><img src="http://placehold.it/50x50" alt="Zayre Link"><br>Zayre</a>
 
-              <a href="#" class="btn retailbottom"><img src="http://placehold.it/50x50" alt="Woolworth Link"><br>Woolworth</a>
+              <a href="#" class="btn retail-link"><img src="http://placehold.it/50x50" alt="Woolworth Link"><br>Woolworth</a>
             </div>
         </div>
-        <div class="col-md-6 col-sm-12 lineup">
+        <div class="col-md-6 col-sm-12 bottom-right">
             <h3>ACME Product Line-up</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
 
         </div>
       </div>
