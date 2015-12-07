@@ -1,6 +1,16 @@
 var gulp   = require('gulp'),
     less   = require('gulp-less'),
-    concat = require('gulp-concat');
+    concat = require('gulp-concat'),
+    insert = require('gulp-insert');
+    replace = require('gulp-replace');
+
+// gulp.task('insert-variables', function(){
+//     gulp.src(['src/less/_theme.less'])
+//       .pipe(replace(/./g, ''))
+//       .pipe(insert.prepend(theme))
+//       .pipe(concat('_theme.less'))
+//       .pipe(gulp.dest('src/less'))
+// });
 
 gulp.task('process-less', function(){
   gulp.src(['src/less/site.less'])

@@ -6,13 +6,9 @@
 
     <title>ACME</title>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/site.css">
-    <script src="assets/js/site.js" type="text/javascript"></script>
 
     <?php
       $companyName = "ACME";
-      $slogan = "Stop Accelerate Incredibilus in his tracks.";
-      $tagline = "Crush pesky roadrunners with ease.";
       $couponPrice = "$6.00 OFF!";
       $vendors = array("Venture"          => "'#'",
                        "Zayre"            => "'#'",
@@ -26,8 +22,10 @@
       $style = array();
       switch ($code) {
         case 'anvil':
-          $style['product']     = 'Anvil';
-          $style['headline'] = $slogan;
+          $style['product']  = 'Anvil';
+          $style['headline'] =
+            "<h1 class='headline'>Stop Accelerate Incredibilus in his tracks.</h1>
+             <p>Crush pesky roadrunners with ease.</p>";
           $style['content']  =
             "<h3>ACME Product Line-up</h3>
              <p>ANVIL Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>";
@@ -39,8 +37,10 @@
             $style["theme"]['body']     = "raleway";
           break;
         case 'glue':
-          $style['product']     = 'Glue';
-          $style['headline'] = $slogan;
+          $style['product']  = 'Glue';
+          $style['headline'] =
+            "<h1 class='headline'>Stop Accelerate Incredibilus in his tracks.</h1>
+             <p>Crush pesky roadrunners with ease.</p>";
           $style['content']  =
             "<h3>ACME Product Line-up</h3>
              <p>GLUE Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>";
@@ -52,8 +52,10 @@
             $style["theme"]['body']     = "helvetica";
           break;
         case 'jet_propelled_unicycle':
-          $style['product']     = 'Jet Propelled Unicycle';
-          $style['headline'] = $slogan;
+          $style['product']  = 'Jet Propelled Unicycle';
+          $style['headline'] =
+            "<h1 class='headline'>Stop Accelerate Incredibilus in his tracks.</h1>
+             <p>Crush pesky roadrunners with ease.</p>";
           $style['content']  =
             "<h3>ACME Product Line-up</h3>
              <p>JET Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>";
@@ -65,8 +67,10 @@
             $style["theme"]['body']     = "helvetica";
           break;
         default:
-          $style['product']     = 'Anvil';
-          $style['headline'] = $slogan;
+          $style['product']  = 'Anvil';
+          $style['headline'] =
+            "<h1 class='headline'>Stop Accelerate Incredibilus in his tracks.</h1>
+             <p>Crush pesky roadrunners with ease.</p>";
           $style['content']  =
             "<h3>ACME Product Line-up</h3>
              <p>ANVIL Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>";
@@ -84,7 +88,12 @@
       $content  = $style['content'];
       $layout   = $style['layout'];
       $theme    = $style['theme'];
+
     ?>
+
+
+    <link rel="stylesheet" type="text/css" href="assets/css/site.css">
+    <script src="assets/js/site.js" type="text/javascript"></script>
 
   </head>
 
@@ -97,8 +106,7 @@
         <div class="col-md-7 col-md-push-4 header">
 
           <?php
-            echo '<h1 class="headline">'.$headline.'</h1>
-                  <p>'.$tagline.'</p>';
+            echo $headline;
           ?>
 
           <br><a href="#promo" data-toggle="modal" alt="promo">
