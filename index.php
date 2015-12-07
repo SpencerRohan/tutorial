@@ -11,7 +11,6 @@
 
     <?php
       $companyName = "ACME";
-      $productLine = "Anvil";
       $slogan = "Stop Accelerate Incredibilus in his tracks.";
       $tagline = "Crush pesky roadrunners with ease.";
       $couponPrice = "$6.00 OFF!";
@@ -20,6 +19,71 @@
                        "Woolworth"        => "'#'",
                        "Marshall Field's" => "'#'",
                        "Bamberger's"      => "'#'");
+
+      //code possible = anvil | glue | jet_propelled_unicycle
+      $code = 'anvil';
+
+      $style = array();
+      switch ($code) {
+        case 'anvil':
+          $style['product']     = 'Anvil';
+          $style['headline'] = $slogan;
+          $style['content']  =
+            "<h3>ACME Product Line-up</h3>
+             <p>ANVIL Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>";
+          $style['style'] = "default";
+          $style['theme'] = array();
+            $style['theme']['hex']      = "#981b1e";
+            $style['theme']['color']    = "red";
+            $style['theme']['headline'] = "raleway";
+            $style["theme"]['body']     = "raleway";
+          break;
+        case 'glue':
+          $style['product']     = 'Glue';
+          $style['headline'] = $slogan;
+          $style['content']  =
+            "<h3>ACME Product Line-up</h3>
+             <p>GLUE Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>";
+          $style['layout']   = "default";
+          $style['theme']    = array();
+            $style['theme']['hex']      = "#B7AF1F";
+            $style['theme']['color']    = "green";
+            $style['theme']['headline'] = "oswald";
+            $style["theme"]['body']     = "helvetica";
+          break;
+        case 'jet_propelled_unicycle':
+          $style['product']     = 'Jet Propelled Unicycle';
+          $style['headline'] = $slogan;
+          $style['content']  =
+            "<h3>ACME Product Line-up</h3>
+             <p>JET Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>";
+          $style['layout']   = "centered";
+          $style['theme']    = array();
+            $style['theme']['hex']      = "#DCA65A";
+            $style['theme']['color']    = "blue";
+            $style['theme']['headline'] = "roboto_slab";
+            $style["theme"]['body']     = "helvetica";
+          break;
+        default:
+          $style['product']     = 'Anvil';
+          $style['headline'] = $slogan;
+          $style['content']  =
+            "<h3>ACME Product Line-up</h3>
+             <p>ANVIL Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>";
+          $style['style'] = "default";
+          $style['theme'] = array();
+            $style['theme']['hex']      = "#981b1e";
+            $style['theme']['color']    = "red";
+            $style['theme']['headline'] = "raleway";
+            $style["theme"]['body']     = "raleway";
+          break;
+      }
+
+      $product  = $style['product'];
+      $headline = $style['headline'];
+      $content  = $style['content'];
+      $layout   = $style['layout'];
+      $theme    = $style['theme'];
     ?>
 
   </head>
@@ -33,7 +97,7 @@
         <div class="col-md-7 col-md-push-4 header">
 
           <?php
-            echo '<h1 class="headline">'.$slogan.'</h1>
+            echo '<h1 class="headline">'.$headline.'</h1>
                   <p>'.$tagline.'</p>';
           ?>
 
@@ -73,7 +137,7 @@
             <h4>
 
               <?php
-                echo "on ".$companyName." ".$productLine;
+                echo "on ".$companyName." ".$product;
               ?>
 
             </h4>
@@ -89,8 +153,9 @@
       <div class ="row bottom">
 
         <div class="col-md-6 col-sm-12 col-md-push-6 bottom-right">
-            <h3>ACME Product Line-up</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+
+            <?php echo $content; ?>
+
         </div>
 
         <div class="col-md-6 col-sm-12 col-md-pull-6 bottom-left">
