@@ -3,6 +3,11 @@
 @import "_variables.less";
 @import "_font.less";
 
+.align(@alignment: center) {
+  text-align: @alignment;
+}
+
+
 .debug {
   border: 2px solid @red;
 }
@@ -21,9 +26,9 @@ h4 {
   background-color: @black;
   height: 30px;
   position: fixed;
-  text-align: center;
   width: 100%;
   z-index: 1;
+  .align();
 }
 
 .logo {
@@ -44,6 +49,7 @@ h4 {
 }
 
 
+
 .coupon {
   background-color:rgba(255, 255, 255, 0.7);
   border: 4px black dashed;
@@ -52,7 +58,7 @@ h4 {
   margin-top: 20px;
   max-width: 450px;
   padding: 10% 10%;
-  text-align: center;
+  .align();
 }
 
 .coupon-price {
@@ -69,7 +75,7 @@ h4 {
   font-size: 12px;
   height: 40px;
   margin: auto;
-  text-align: center;
+  .align();
 }
 
 .save-button {
@@ -81,7 +87,7 @@ h4 {
   font-size: 15px;
   margin-bottom: 5px;
   padding-left: 40px;
-  text-align: center;
+  .align();
   p {
     font-size: 1.5em;
     padding-top: 4px;
@@ -96,7 +102,7 @@ h4 {
 
 .promo {
   padding: 10px;
-  text-align: center;
+  .align();
 }
 
 .promo-button {
@@ -134,7 +140,7 @@ h4 {
 
 .left-container {
   padding-top: 14px;
-  text-align: center;
+  .align();
 
 }
 
@@ -142,8 +148,8 @@ h4 {
   background-color: @red;
   border-radius: @circle;
   height: 30px;
-  margin: auto;
   width: 30px;
+  margin: auto;
   &:hover {
     background-color: @hover-red;
   };
@@ -155,8 +161,8 @@ h4 {
 
 footer {
   margin-top: 10px;
-  text-align: right;
   text-transform: lowercase;
+  .align(right);
 }
 
 
@@ -171,7 +177,7 @@ footer {
   }
 
   .header {
-    text-align: left;
+    .align(left);
   }
 
   .logo {
