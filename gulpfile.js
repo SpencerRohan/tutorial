@@ -18,9 +18,10 @@ gulp.task('process-scripts', function(){
 });
 
 gulp.task('watch', function(){
-  gulp.watch([['src/vendor/jquery/dist/jquery.min.js',
-            'src/vendor/bootstrap/dist/js/bootstrap.min.js',
-            'src/js/*.js'],
-            ['process-less'])
+  gulp.watch(['src/less/*.less',
+              'src/vendor/jquery/dist/jquery.min.js',
+              'src/vendor/bootstrap/dist/js/bootstrap.min.js',
+              'src/js/*.js'],
+              ['process-less'])
 });
 

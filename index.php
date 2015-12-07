@@ -30,7 +30,7 @@
     </div>
     <div class="container back box-shadow">
       <div class ="row top">
-        <div class="col-md-7 col-md-push-5 header">
+        <div class="col-md-7 col-md-push-4 header">
 
           <?php
             echo '<h1 class="headline">'.$slogan.'</h1>

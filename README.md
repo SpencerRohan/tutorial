@@ -34,7 +34,7 @@ This phase was great. I was able to get super nerdy into my naming conventions, 
 + Normalize.css - setting everything to a zero level, useful?
 + Why @import is needed if gulp is concating everything? Outside of variable naming.
 + How much time does a dev spend on the front-end portion of a project, on average? Is it always adjusting?
-+ Customizing Bootstrap variable file. Fonts, Dimensions, Colors etc.
++ Customizing Bootstrap variable file. Fonts, Dimensions, Colors etc. & WHEN?
 + LESS saving full property values.
 + http://getbootstrap.com/customize/#less-variables
 

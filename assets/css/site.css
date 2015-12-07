@@ -1531,7 +1531,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'raleway-bold';
+  font-family: 'ralewayextrabold';
   font-weight: 500;
   line-height: 1.1;
   color: #000000;
@@ -7103,10 +7103,18 @@ button.close {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'ralewayextrabold';
+  src: url('../../assets/fonts/raleway/raleway-extrabold-webfont.eot');
+  src: url('../../assets/fonts/raleway/raleway-extrabold-webfont.eot?#iefix') format('embedded-opentype'), url('../../assets/fonts/raleway/raleway-extrabold-webfont.woff2') format('woff2'), url('../../assets/fonts/raleway/raleway-extrabold-webfont.woff') format('woff'), url('../../assets/fonts/raleway/raleway-extrabold-webfont.ttf') format('truetype'), url('../../assets/fonts/raleway/raleway-extrabold-webfont.svg#ralewayextrabold') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
 .debug {
   border: 2px solid #9e0b0f;
 }
 h3 {
+  font-family: 'raleway-bold';
   margin: 0;
 }
 h4 {
@@ -7122,10 +7130,10 @@ h4 {
   z-index: 1;
 }
 .logo {
-  max-height: 7em;
+  width: 200px;
 }
 .top {
-  margin-top: 10%;
+  margin-top: 8%;
   padding: 20px;
   padding-bottom: 60px;
 }
@@ -7138,7 +7146,9 @@ h4 {
   background-color: rgba(255, 255, 255, 0.7);
   border: black dashed 3px;
   box-shadow: 0px 0px 18px 1px gray;
+  margin: auto;
   margin-top: 20px;
+  max-width: 450px;
   padding: 10% 10%;
   text-align: center;
 }
@@ -7163,6 +7173,8 @@ h4 {
 .header {
   font-size: 15px;
   margin-bottom: 5px;
+  padding-left: 40px;
+  text-align: center;
 }
 .header p {
   font-size: 1.5em;
@@ -7232,7 +7244,10 @@ footer {
   .bottom-left {
     border-right: 1px solid #bbbbbb;
   }
-  .top {
-    margin-bottom: 10px;
+  .header {
+    text-align: left;
+  }
+  .logo {
+    width: 250px;
   }
 }
