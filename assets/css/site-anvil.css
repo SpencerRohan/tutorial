@@ -3406,25 +3406,25 @@ fieldset[disabled] a.btn {
 .btn-default {
   color: #333;
   background-color: #fff;
-  border-color: #D9534F;
+  border-color: red;
 }
 .btn-default:focus,
 .btn-default.focus {
   color: #333;
   background-color: #e6e6e6;
-  border-color: #8b211e;
+  border-color: #800000;
 }
 .btn-default:hover {
   color: #333;
   background-color: #e6e6e6;
-  border-color: #c12e2a;
+  border-color: #c20000;
 }
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   color: #333;
   background-color: #e6e6e6;
-  border-color: #c12e2a;
+  border-color: #c20000;
 }
 .btn-default:active:hover,
 .btn-default.active:hover,
@@ -3437,7 +3437,7 @@ fieldset[disabled] a.btn {
 .open > .dropdown-toggle.btn-default.focus {
   color: #333;
   background-color: #d4d4d4;
-  border-color: #8b211e;
+  border-color: #800000;
 }
 .btn-default:active,
 .btn-default.active,
@@ -3454,7 +3454,7 @@ fieldset[disabled] .btn-default:focus,
 .btn-default[disabled].focus,
 fieldset[disabled] .btn-default.focus {
   background-color: #fff;
-  border-color: #D9534F;
+  border-color: red;
 }
 .btn-default .badge {
   color: #fff;
@@ -3691,25 +3691,25 @@ fieldset[disabled] .btn-warning.focus {
 .btn-danger {
   color: #fff;
   background-color: red;
-  border-color: #D9534F;
+  border-color: red;
 }
 .btn-danger:focus,
 .btn-danger.focus {
   color: #fff;
   background-color: #cc0000;
-  border-color: #8b211e;
+  border-color: #800000;
 }
 .btn-danger:hover {
   color: #fff;
   background-color: #cc0000;
-  border-color: #c12e2a;
+  border-color: #c20000;
 }
 .btn-danger:active,
 .btn-danger.active,
 .open > .dropdown-toggle.btn-danger {
   color: #fff;
   background-color: #cc0000;
-  border-color: #c12e2a;
+  border-color: #c20000;
 }
 .btn-danger:active:hover,
 .btn-danger.active:hover,
@@ -3722,7 +3722,7 @@ fieldset[disabled] .btn-warning.focus {
 .open > .dropdown-toggle.btn-danger.focus {
   color: #fff;
   background-color: #a80000;
-  border-color: #8b211e;
+  border-color: #800000;
 }
 .btn-danger:active,
 .btn-danger.active,
@@ -3739,7 +3739,7 @@ fieldset[disabled] .btn-danger:focus,
 .btn-danger[disabled].focus,
 fieldset[disabled] .btn-danger.focus {
   background-color: red;
-  border-color: #D9534F;
+  border-color: red;
 }
 .btn-danger .badge {
   color: red;
@@ -7159,12 +7159,15 @@ h4 {
   width: 100%;
 }
 .button {
-  background-color: red;
+  background-color: #981b1e;
   border-radius: 100px;
   font-size: 12px;
   height: 40px;
   margin: auto;
   text-align: center;
+}
+.button:hover {
+  background-color: red;
 }
 .save-button {
   padding: 3px 20px 3px 20px;
@@ -7219,14 +7222,14 @@ h4 {
   text-align: center;
 }
 .retail-circle {
-  background-color: red;
+  background-color: #981b1e;
   border-radius: 999px;
   height: 30px;
   width: 30px;
   margin: auto;
 }
 .retail-circle:hover {
-  background-color: #D9534F;
+  background-color: red;
 }
 .retail-link {
   width: 30%;

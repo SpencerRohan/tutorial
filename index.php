@@ -16,7 +16,7 @@
                        "Marshall Field's" => "'#'",
                        "Bamberger's"      => "'#'");
 
-      //code possible = anvil | glue | jet_propelled_unicycle
+      //$code = anvil | glue | jet_propelled_unicycle
       $code = 'anvil';
       include 'assets/php/_themes.php';
 

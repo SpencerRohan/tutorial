@@ -1,19 +1,16 @@
 @black:  #000000;
 @ltgray: #bbbbbb;
-@hover-red: #D9534F;
+@hover: @theme-color;
   @color-background: @ltgray;
-  @color-button:     @theme-color;
+  @color-button:     @theme-hex;
   @color-content:    @black;
-  @color-vendor:     @theme-color;
+  @color-vendor:     @theme-hex;
 
-@anchorjack:  'anchorjack';
-@raleway:     'raleway';
-@ralewaybold: 'raleway-bold';
-@ralewayextrabold: 'ralewayextrabold';
-  @font-content: @raleway;
-  @font-heading: @ralewayextrabold;
-  @font-sm-heading: @ralewaybold;
-  @font-logo:    @anchorjack;
+
+@font-content: @theme-content;
+@font-heading: @theme-headline;
+@font-sm-heading: @theme-sm-headline;
+@font-logo: @anchorjack;
 
 @background: "../images/background.png";
   @image-background: url(@background) center;
@@ -65,7 +62,7 @@
 //** Global textual link color.
 @link-color:            @gray;
 //** Link hover color set via `darken()` function.
-@link-hover-color:      @theme-color;
+@link-hover-color:      @hover;
 //** Link hover decoration.
 @link-hover-decoration: none;
 
@@ -108,7 +105,7 @@
 
 @btn-default-color:              #333;
 @btn-default-bg:                 #fff;
-@btn-default-border:             @hover-red;
+@btn-default-border:             @hover;
 
 @btn-primary-color:              #fff;
 @btn-primary-bg:                 @brand-primary;
@@ -127,8 +124,8 @@
 @btn-warning-border:             darken(@btn-warning-bg, 5%);
 
 @btn-danger-color:               #fff;
-@btn-danger-bg:                  @theme-color;
-@btn-danger-border:              @hover-red;
+@btn-danger-bg:                  @hover;
+@btn-danger-border:              @hover;
 
 @btn-link-disabled-color:        @gray-light;
 

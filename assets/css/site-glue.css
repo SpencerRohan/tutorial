@@ -1429,7 +1429,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: 'raleway';
+  font-family: 'oswald';
   font-size: 14px;
   line-height: 1.42857143;
   color: #555555;
@@ -1531,7 +1531,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'ralewayextrabold';
+  font-family: 'oswald';
   font-weight: 500;
   line-height: 1.1;
   color: #000000;
@@ -3406,25 +3406,25 @@ fieldset[disabled] a.btn {
 .btn-default {
   color: #333;
   background-color: #fff;
-  border-color: #D9534F;
+  border-color: green;
 }
 .btn-default:focus,
 .btn-default.focus {
   color: #333;
   background-color: #e6e6e6;
-  border-color: #8b211e;
+  border-color: #000000;
 }
 .btn-default:hover {
   color: #333;
   background-color: #e6e6e6;
-  border-color: #c12e2a;
+  border-color: #004300;
 }
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   color: #333;
   background-color: #e6e6e6;
-  border-color: #c12e2a;
+  border-color: #004300;
 }
 .btn-default:active:hover,
 .btn-default.active:hover,
@@ -3437,7 +3437,7 @@ fieldset[disabled] a.btn {
 .open > .dropdown-toggle.btn-default.focus {
   color: #333;
   background-color: #d4d4d4;
-  border-color: #8b211e;
+  border-color: #000000;
 }
 .btn-default:active,
 .btn-default.active,
@@ -3454,7 +3454,7 @@ fieldset[disabled] .btn-default:focus,
 .btn-default[disabled].focus,
 fieldset[disabled] .btn-default.focus {
   background-color: #fff;
-  border-color: #D9534F;
+  border-color: green;
 }
 .btn-default .badge {
   color: #fff;
@@ -3691,25 +3691,25 @@ fieldset[disabled] .btn-warning.focus {
 .btn-danger {
   color: #fff;
   background-color: green;
-  border-color: #D9534F;
+  border-color: green;
 }
 .btn-danger:focus,
 .btn-danger.focus {
   color: #fff;
   background-color: #004d00;
-  border-color: #8b211e;
+  border-color: #000000;
 }
 .btn-danger:hover {
   color: #fff;
   background-color: #004d00;
-  border-color: #c12e2a;
+  border-color: #004300;
 }
 .btn-danger:active,
 .btn-danger.active,
 .open > .dropdown-toggle.btn-danger {
   color: #fff;
   background-color: #004d00;
-  border-color: #c12e2a;
+  border-color: #004300;
 }
 .btn-danger:active:hover,
 .btn-danger.active:hover,
@@ -3722,7 +3722,7 @@ fieldset[disabled] .btn-warning.focus {
 .open > .dropdown-toggle.btn-danger.focus {
   color: #fff;
   background-color: #002900;
-  border-color: #8b211e;
+  border-color: #000000;
 }
 .btn-danger:active,
 .btn-danger.active,
@@ -3739,7 +3739,7 @@ fieldset[disabled] .btn-danger:focus,
 .btn-danger[disabled].focus,
 fieldset[disabled] .btn-danger.focus {
   background-color: green;
-  border-color: #D9534F;
+  border-color: green;
 }
 .btn-danger .badge {
   color: green;
@@ -6321,7 +6321,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: 'raleway';
+  font-family: 'oswald';
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6439,7 +6439,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: 'raleway';
+  font-family: 'oswald';
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7114,7 +7114,7 @@ button.close {
   border: 2px solid red;
 }
 h3 {
-  font-family: 'raleway-bold';
+  font-family: 'oswald';
   margin: 0;
 }
 h4 {
@@ -7159,12 +7159,15 @@ h4 {
   width: 100%;
 }
 .button {
-  background-color: green;
+  background-color: #B7AF1F;
   border-radius: 100px;
   font-size: 12px;
   height: 40px;
   margin: auto;
   text-align: center;
+}
+.button:hover {
+  background-color: green;
 }
 .save-button {
   padding: 3px 20px 3px 20px;
@@ -7219,14 +7222,14 @@ h4 {
   text-align: center;
 }
 .retail-circle {
-  background-color: green;
+  background-color: #B7AF1F;
   border-radius: 999px;
   height: 30px;
   width: 30px;
   margin: auto;
 }
 .retail-circle:hover {
-  background-color: #D9534F;
+  background-color: green;
 }
 .retail-link {
   width: 30%;
