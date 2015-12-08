@@ -23,7 +23,7 @@
     ?>
 
 
-    <link rel="stylesheet" type="text/css" href="assets/css/site.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/site-<?php echo $code ?>.css">
     <script src="assets/js/site.js" type="text/javascript"></script>
 
   </head>

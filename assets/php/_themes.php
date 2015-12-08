@@ -1,4 +1,8 @@
 <?php
+  if (!$code) {
+    $code = "anvil";
+  }
+
   $style = array();
   switch ($code) {
     case 'anvil':
@@ -31,7 +35,7 @@
         $style['theme']['headline'] = "oswald";
         $style["theme"]['body']     = "helvetica";
       break;
-    case 'jet_propelled_unicycle':
+    case 'jet':
       $style['product']  = 'Jet Propelled Unicycle';
       $style['headline'] =
         "<h1 class='headline'>Stop Accelerate Incredibilus in his tracks.</h1>
@@ -60,6 +64,7 @@
         $style['theme']['color']    = "red";
         $style['theme']['headline'] = "raleway";
         $style["theme"]['body']     = "raleway";
+        $code = "anvil";
       break;
   }
 

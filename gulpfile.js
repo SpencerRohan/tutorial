@@ -4,14 +4,6 @@ var gulp   = require('gulp'),
     insert = require('gulp-insert');
     replace = require('gulp-replace');
 
-// gulp.task('process-phpthemes', function(){
-//     gulp.src(['src/less/_theme.less'])
-//       .pipe(replace(/./g, ''))
-//       .pipe(insert.prepend())
-//       .pipe(concat('_theme.less'))
-//       .pipe(gulp.dest('src/less'))
-// });
-
 // gulp.task('process-variables', function(){
 //     themes.forEach(function(theme) {
 //       gulp.src(['./src/less/_variables-' + theme.name + '.less'])
@@ -23,10 +15,18 @@ var gulp   = require('gulp'),
 // });
 
 gulp.task('process-less', function(){
-  gulp.src(['src/less/site.less'])
+  gulp.src(['src/less/_theme-anvil.less'])
     .pipe(less())
-    .pipe(concat('site.css'))
-    .pipe(gulp.dest('assets/css'))
+    .pipe(concat('site-anvil.css'))
+    .pipe(gulp.dest('assets/css'));
+  gulp.src(['src/less/_theme-glue.less'])
+    .pipe(less())
+    .pipe(concat('site-glue.css'))
+    .pipe(gulp.dest('assets/css'));
+  gulp.src(['src/less/_theme-jet_propelled_unicycle.less'])
+    .pipe(less())
+    .pipe(concat('site-jet_propelled_unicycle.css'))
+    .pipe(gulp.dest('assets/css'));
 });
 
 gulp.task('process-scripts', function(){
