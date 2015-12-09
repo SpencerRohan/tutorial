@@ -139,10 +139,9 @@ h4 {
 .left-container {
   padding-top: 14px;
   .align();
-
 }
 
-.retail-circle {
+.retail-circle-default {
   background-color: @theme-hex;
   border-radius: @circle;
   height: 30px;
@@ -153,26 +152,56 @@ h4 {
   };
 }
 
-.retail-circle-spacer {
-  background-color: white;
+.retail-circle-centered {
+  background-color: @theme-hex;
   border-radius: @circle;
   height: 30px;
   width: 30px;
+  float: left;
+  margin-left: 5px;
   &:hover {
     background-color: @theme-color;
   };
 }
 
-.retail-link {
-  text-align: center;
-
+.big-retail-circle-centered {
+  background-color: @theme-hex;
+  border-radius: @circle;
+  height: 40px;
+  width: 40px;
+  float: left;
+  &:hover {
+    background-color: @theme-color;
+  };
 }
 
-.retail-link-centered {
-  display: inline-block;
+.cursor-auto {
+  cursor: auto;
+}
+
+.retail-circle-spacer {
+  background-color: white;
+  border-radius: @circle;
+  height: 30px;
+  width: 30px;
+  float: left;
+}
+
+.retail-link-default{
   text-align: center;
+  width: 30%;
+  display: inline-block;
+}
+
+
+.retail-link-centered {
   width: 40%;
-  margin: 0;
+  display: inline-block;
+  text-align: left;
+}
+
+.link {
+  padding: 5px 10px;
 }
 
 footer {

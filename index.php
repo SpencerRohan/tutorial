@@ -13,13 +13,19 @@
       $vendors = [ "Venture" => "'#'",
                    "Zayre" => "'#'",
                    "Woolworth" => "'#'",
-                   "venture" => "'#'",
-                   "ventrue" => "'#'",
                    "Marshall Field's" => "'#'",
                    "Bamberger's" => "'#'" ];
 
+    function circleSize($count, $size) {
+        if ($count == 0) {
+          $size = ($size == 'big-' ? ' ' : 'big-');
+        }
+        return $size;
+      };
+
+
       //$code = anvil | glue | jet_propelled_unicycle
-      $code = 'anvil';
+      $code = 'glue';
       include 'assets/partials/_themes.php';
 
     ?>
@@ -97,17 +103,33 @@
         <div class="col-md-6 col-sm-12 col-md-pull-6 bottom-left">
           <h3>Available at these Fine Retailers</h3>
           <div class= "row left-container">
-              <? if ($vendors && count($vendors > 0)): ?>
-                <? foreach ($vendors as $name => $link): ?>
-                  <div class="col-xs-4 retail-link">
+              <?
+                $i=-1;
+                $size = '';
+                if ($vendors && count($vendors > 0)):
+                  foreach ($vendors as $name => $link):
+                    $size = circleSize($i, $size);
+                ?>
+                  <div class="<?= 'retail-link-'.$layout ?>">
                     <a href= <?= $link ?> class='btn'>
-                      <div class='retail-circle'></div>
+                      <div class="<?= $size.'retail-circle-'.$layout; ?>"></div>
                       <div class='link'><?= $name ?></div>
                     </a>
                   </div>
-                <? endforeach; ?>
-              <? else: ?>
+              <?
+                $i == 1 ? $i = 0 : $i++;
+                endforeach;
+                else:
+              ?>
                 <h3>Check back soon!</h3>
+              <? endif;
+                if ($centered && count($vendors) % 2 != 0 ): ?>
+                <div class="retail-link-centered cursor-auto">
+                  <div class='btn cursor-auto'>
+                    <div class='retail-circle-spacer'></div>
+                    <div class='link'></div>
+                  </div>
+                </div>
               <? endif; ?>
           </div>
         </div>

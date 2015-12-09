@@ -1,8 +1,8 @@
-.button, .retail-circle {
+.button, .retail-circle-centered, .retail-circle-default, .big-retail-circle-centered {
   background-color: <?= $theme['hex']; ?>;
 }
 
-.button:hover, .retail-circle:hover {
+.button:hover, .retail-circle-default:hover, .retail-circle-centered:hover, .big-retail-circle-centered:hover {
   background-color: <?= $theme['color']; ?>;
 }
 
