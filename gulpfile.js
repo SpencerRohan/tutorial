@@ -15,17 +15,9 @@ var gulp   = require('gulp'),
 // });
 
 gulp.task('process-less', function(){
-  gulp.src(['src/less/_theme-anvil.less'])
+  gulp.src(['src/less/_import.less'])
     .pipe(less())
-    .pipe(concat('site-anvil.css'))
-    .pipe(gulp.dest('assets/css'));
-  gulp.src(['src/less/_theme-glue.less'])
-    .pipe(less())
-    .pipe(concat('site-glue.css'))
-    .pipe(gulp.dest('assets/css'));
-  gulp.src(['src/less/_theme-jet_propelled_unicycle.less'])
-    .pipe(less())
-    .pipe(concat('site-jet_propelled_unicycle.css'))
+    .pipe(concat('site.css'))
     .pipe(gulp.dest('assets/css'));
 });
 

@@ -10,7 +10,8 @@
       'layout'   => 'default',
       'theme'    => ['hex'   => '#981b1e',
                      'color' => 'red',
-                     'headline' => 'raleway',
+                     'headline' => 'ralewayextrabold',
+                     'sm-headline' => 'ralewaybold',
                      'body' => 'raleway']
     ],
     'glue'=> [
@@ -22,7 +23,8 @@
       'layout'   => 'centered',
       'theme'    => ['hex'   => '#B7AF1F',
                      'color' => 'blue',
-                     'headline' => 'oswald',
+                     'headline' => 'oswald-heavy',
+                     'sm-headline' => 'oswald-bold',
                      'body' => 'helvetica']
     ],
     'jet_propelled_unicycle'=> [
@@ -34,7 +36,8 @@
       'layout'   => 'centered',
       'theme'    => ['hex'   => '#DCA65A',
                      'color' => 'blue',
-                     'headline' => 'roboto_slab',
+                     'headline' => 'roboto_slab-bold',
+                     'sm-headline' => 'roboto_slab',
                      'body' => 'helvetica']
     ],
   ];

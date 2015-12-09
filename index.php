@@ -10,21 +10,27 @@
     <?php
       $companyName = "ACME";
       $couponPrice = "$6.00 OFF!";
-      $vendors = array("Venture"          => "'#'",
-                       "Zayre"            => "'#'",
-                       "Woolworth"        => "'#'",
-                       "Marshall Field's" => "'#'",
-                       "Bamberger's"      => "'#'");
+      $vendors = [ "Venture" => "'#'",
+                   "Zayre" => "'#'",
+                   "Woolworth" => "'#'",
+                   "venture" => "'#'",
+                   "ventrue" => "'#'",
+                   "Marshall Field's" => "'#'",
+                   "Bamberger's" => "'#'" ];
 
       //$code = anvil | glue | jet_propelled_unicycle
       $code = 'anvil';
-      include 'assets/php/_themes.php';
+      include 'assets/partials/_themes.php';
 
     ?>
 
 
-    <link rel="stylesheet" type="text/css" href="assets/css/site-<?= $code ?>.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/site.css">
     <script src="assets/js/site.js" type="text/javascript"></script>
+
+    <style>
+      <? include 'assets/css/style.php'; ?>
+    </style>
 
   </head>
 
@@ -34,15 +40,13 @@
     </div>
     <div class="container back box-shadow">
       <div class ="row top">
-
-          <div class="<?= $centered ? 'col-md-12 header centered' : 'col-md-7 col-md-push-4 header' ?>">
-
+        <div class="<?= $centered ? 'col-md-12 header centered' : 'col-md-7 col-md-push-4 header' ?>">
           <?= $headline; ?>
 
-          <?= !$centered ?
+          <?= $centered ?
             ''
             :'<br><a href="#promo" data-toggle="modal" alt="promo">
-                <button class="btn btn-danger button promo-button">
+                <button class="btn btn-primary button promo-button">
                   <img class="promo-play" src="assets/images/play.png">
                   WATCH VIDEO
                 </button>
@@ -61,12 +65,7 @@
           </div>
 
         </div>
-
-          <?= $centered ?
-            "<div class='col-md-12 centered'>"
-            :"<div class='col-md-4 col-md-pull-7'>"
-          ?>
-
+        <div class="<?= $centered ? 'col-md-12 centered' : 'col-md-4 col-md-pull-7' ?>">
           <div class="coupon">
             <h1 class="coupon-price">
 
@@ -78,7 +77,7 @@
               <?= "on ".$companyName." ".$product; ?>
 
             </h4>
-            <button class="btn btn-danger button save-button">
+            <button class="btn btn-primary button save-button">
               GET COUPON NOW
             </button>
           </div>
@@ -91,26 +90,25 @@
 
         <div class="col-md-6 col-sm-12 col-md-push-6 bottom-right">
 
-            <?= $content; ?>
+          <?= $content; ?>
 
         </div>
 
         <div class="col-md-6 col-sm-12 col-md-pull-6 bottom-left">
           <h3>Available at these Fine Retailers</h3>
           <div class= "row left-container">
-
-            <?php
-              if ($vendors && count($vendors >= 1)){
-                foreach ($vendors as $name => $link) {
-                  echo "<a href=".$link."class='btn retail-link'>
-                          <div class='retail-circle'></div>".$name."
-                        </a>";
-                }
-              } else {
-                    echo "<h3>Check back soon!</h3>";
-              }
-            ?>
-
+              <? if ($vendors && count($vendors > 0)): ?>
+                <? foreach ($vendors as $name => $link): ?>
+                  <div class="col-xs-4 retail-link">
+                    <a href= <?= $link ?> class='btn'>
+                      <div class='retail-circle'></div>
+                      <div class='link'><?= $name ?></div>
+                    </a>
+                  </div>
+                <? endforeach; ?>
+              <? else: ?>
+                <h3>Check back soon!</h3>
+              <? endif; ?>
           </div>
         </div>
 

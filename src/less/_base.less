@@ -63,13 +63,13 @@ h4 {
   width: 100%;
 }
 
-
 .button {
   background-color: @theme-hex;
   border-radius: 100px;
   font-size: 12px;
   height: 40px;
   margin: auto;
+  border: none;
   .align();
   &:hover {
     background-color: @theme-color;
@@ -153,8 +153,26 @@ h4 {
   };
 }
 
+.retail-circle-spacer {
+  background-color: white;
+  border-radius: @circle;
+  height: 30px;
+  width: 30px;
+  &:hover {
+    background-color: @theme-color;
+  };
+}
+
 .retail-link {
-  width: 30%;
+  text-align: center;
+
+}
+
+.retail-link-centered {
+  display: inline-block;
+  text-align: center;
+  width: 40%;
+  margin: 0;
 }
 
 footer {
