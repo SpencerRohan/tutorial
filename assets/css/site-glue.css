@@ -1429,7 +1429,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: 'oswald';
+  font-family: 'helvetica';
   font-size: 14px;
   line-height: 1.42857143;
   color: #555555;
@@ -1531,7 +1531,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'oswald';
+  font-family: 'oswald-heavy';
   font-weight: 500;
   line-height: 1.1;
   color: #000000;
@@ -6321,7 +6321,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: 'oswald';
+  font-family: 'helvetica';
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6439,7 +6439,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: 'oswald';
+  font-family: 'helvetica';
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7110,11 +7110,46 @@ button.close {
   font-weight: 900;
   font-style: normal;
 }
+@font-face {
+  font-family: 'roboto_slab-bold';
+  src: url('../../assets/fonts/roboto_slab/robotoslab-bold-webfont.eot');
+  src: url('../../assets/fonts/roboto_slab/robotoslab-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../../assets/fonts/roboto_slab/robotoslab-bold-webfont.woff2') format('woff2'), url('../../assets/fonts/roboto_slab/robotoslab-bold-webfont.woff') format('woff'), url('../../assets/fonts/roboto_slab/robotoslab-bold-webfont.ttf') format('truetype'), url('../../assets/fonts/roboto_slab/robotoslab-bold-webfont.svg#roboto_slabbold') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto_slab';
+  src: url('../../assets/fonts/roboto_slab/robotoslab-regular-webfont.eot');
+  src: url('../../assets/fonts/roboto_slab/robotoslab-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../assets/fonts/roboto_slab/robotoslab-regular-webfont.woff2') format('woff2'), url('../../assets/fonts/roboto_slab/robotoslab-regular-webfont.woff') format('woff'), url('../../assets/fonts/roboto_slab/robotoslab-regular-webfont.ttf') format('truetype'), url('../../assets/fonts/roboto_slab/robotoslab-regular-webfont.svg#roboto_slabregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'oswald-bold';
+  src: url('../../assets/fonts/oswald/oswald-bold-webfont.eot');
+  src: url('../../assets/fonts/oswald/oswald-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../../assets/fonts/oswald/oswald-bold-webfont.woff2') format('woff2'), url('../../assets/fonts/oswald/oswald-bold-webfont.woff') format('woff'), url('../../assets/fonts/oswald/oswald-bold-webfont.ttf') format('truetype'), url('../../assets/fonts/oswald/oswald-bold-webfont.svg#oswaldbold') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'oswald-heavy';
+  src: url('../../assets/fonts/oswald/oswald-heavy-webfont.eot');
+  src: url('../../assets/fonts/oswald/oswald-heavy-webfont.eot?#iefix') format('embedded-opentype'), url('../../assets/fonts/oswald/oswald-heavy-webfont.woff2') format('woff2'), url('../../assets/fonts/oswald/oswald-heavy-webfont.woff') format('woff'), url('../../assets/fonts/oswald/oswald-heavy-webfont.ttf') format('truetype'), url('../../assets/fonts/oswald/oswald-heavy-webfont.svg#oswaldheavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'oswald';
+  src: url('../../assets/fonts/oswald/oswald-regular-webfont.eot');
+  src: url('../../assets/fonts/oswald/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../assets/fonts/oswald/oswald-regular-webfont.woff2') format('woff2'), url('../../assets/fonts/oswald/oswald-regular-webfont.woff') format('woff'), url('../../assets/fonts/oswald/oswald-regular-webfont.ttf') format('truetype'), url('../../assets/fonts/oswald/oswald-regular-webfont.svg#oswald_regularregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 .debug {
   border: 2px solid red;
 }
 h3 {
-  font-family: 'oswald';
+  font-family: 'oswald-bold';
   margin: 0;
 }
 h4 {
@@ -7252,5 +7287,8 @@ footer {
   }
   .logo {
     width: 250px;
+  }
+  .centered {
+    text-align: center;
   }
 }

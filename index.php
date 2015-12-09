@@ -23,7 +23,7 @@
     ?>
 
 
-    <link rel="stylesheet" type="text/css" href="assets/css/site-<?php echo $code ?>.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/site-<?= $code ?>.css">
     <script src="assets/js/site.js" type="text/javascript"></script>
 
   </head>
@@ -34,18 +34,20 @@
     </div>
     <div class="container back box-shadow">
       <div class ="row top">
-        <div class="col-md-7 col-md-push-4 header">
 
-          <?php
-            echo $headline;
+          <div class="<?= $centered ? 'col-md-12 header centered' : 'col-md-7 col-md-push-4 header' ?>">
+
+          <?= $headline; ?>
+
+          <?= !$centered ?
+            ''
+            :'<br><a href="#promo" data-toggle="modal" alt="promo">
+                <button class="btn btn-danger button promo-button">
+                  <img class="promo-play" src="assets/images/play.png">
+                  WATCH VIDEO
+                </button>
+              </a>'
           ?>
-
-          <br><a href="#promo" data-toggle="modal" alt="promo">
-            <button class="btn btn-danger button promo-button">
-              <img class="promo-play" src="assets/images/play.png">
-              WATCH VIDEO
-            </button>
-          </a>
 
           <div class="modal fade" id="promo" role="dialog">
             <div class="modal-dialog">
@@ -60,24 +62,20 @@
 
         </div>
 
-        <div class="col-md-4 col-md-pull-7">
+          <?= $centered ?
+            "<div class='col-md-12 centered'>"
+            :"<div class='col-md-4 col-md-pull-7'>"
+          ?>
+
           <div class="coupon">
             <h1 class="coupon-price">
 
-              <?php
-                if($couponPrice){
-                  echo $couponPrice;
-                } else {
-                    echo "SEE DEALS!";
-                  }
-              ?>
+              <?= $couponPrice ? $couponPrice : "SEE DETAILS" ?>
 
             </h1>
             <h4>
 
-              <?php
-                echo "on ".$companyName." ".$product;
-              ?>
+              <?= "on ".$companyName." ".$product; ?>
 
             </h4>
             <button class="btn btn-danger button save-button">
@@ -93,7 +91,7 @@
 
         <div class="col-md-6 col-sm-12 col-md-push-6 bottom-right">
 
-            <?php echo $content; ?>
+            <?= $content; ?>
 
         </div>
 
