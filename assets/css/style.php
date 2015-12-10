@@ -1,7 +1,22 @@
-.button, .retail-circle, .layout-centered .retail-circle, .layout-centered .big-retail-circle, .layout-centered .promo-play, .button:focus, .button:active{
+.button, .retail-circle, .button:focus, .button:active{
   background-color: <?= $theme['hex']; ?>;
   outline: none;
 }
+
+.layout-centered .retail-circle, .layout-centered .big-retail-circle, .layout-centered .promo-play {
+  background-color: <?= $theme['hex']; ?>;
+  outline: none;
+}
+
+
+
+.button:hover, .retail-circle:hover, .promo-play:hover, .layout-centered .retail-circle:hover, .layout-centered .big-retail-circle:hover {
+  background-color: <?= $theme['color']; ?>;
+}
+
+
+
+
 
 
 .button:hover, .retail-circle:hover, .retail-circle:hover, .layout-centered .big-retail-circle:hover, .promo-play:hover {

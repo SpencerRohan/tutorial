@@ -23,7 +23,6 @@
         return $size;
       };
 
-
       //$code = anvil | glue | jet_propelled_unicycle
       $code = 'glue';
       include 'assets/partials/_themes.php';
@@ -45,7 +44,7 @@
       <img class="logo" src="assets/images/block_title.png" >
     </div>
     <div class="container back box-shadow">
-      <div class ="row top">
+      <div class ="row spotlight">
         <div class="<?= $centered ? 'col-md-12 header centered' : 'col-md-7 col-md-push-4 header' ?>">
           <?= $headline; ?>
 
@@ -81,11 +80,11 @@
           <? endif; ?>
 
 
-          <div class="coupon">
+          <div class="cutout">
 
-            <div class="coupon-details centered">
+            <div class="cutout-details centered">
 
-              <h1 class="coupon-price">
+              <h1 class="cutout-headline">
                 <?= $couponPrice ? $couponPrice : "SEE DETAILS" ?>
               </h1>
 
@@ -94,7 +93,7 @@
               </h4>
             </div>
 
-            <button class="btn btn-primary button save-button">
+            <button class="btn btn-primary button brand-button">
               GET COUPON NOW
             </button>
 
@@ -108,13 +107,14 @@
     <div class="container">
       <div class ="row bottom">
 
-        <div class="col-md-6 col-sm-12 col-md-push-6 bottom-right">
+        <div class="col-md-6 col-sm-12 col-md-push-6 info-card divider-bottom brand-copy info-card-right">
           <?= $content; ?>
         </div>
 
-        <div class="col-md-6 col-sm-12 col-md-pull-6 bottom-left">
+        <div class="col-md-6 col-sm-12 col-md-pull-6 info-card divider-right">
           <h3>Available at these Fine Retailers</h3>
-          <div class= "row left-container">
+          <div class= "row link-container">
+
               <?php
                 $i=-1;
                 if ($vendors && count($vendors > 0)):
@@ -142,6 +142,7 @@
                   </div>
                 </div>
               <? endif; ?>
+
           </div>
         </div>
 

@@ -7175,7 +7175,7 @@ h4 {
 .logo {
   width: 200px;
 }
-.top {
+.spotlight {
   margin-top: 8%;
   padding: 20px;
 }
@@ -7184,7 +7184,7 @@ h4 {
   background-size: cover;
   box-shadow: 15px 45px 20px -15px gray, -15px 45px 20px -15px gray;
 }
-.coupon {
+.cutout {
   background-color: rgba(255, 255, 255, 0.7);
   border: 4px black dashed;
   box-shadow: 0px 0px 18px 1px gray;
@@ -7194,7 +7194,7 @@ h4 {
   padding: 10% 10%;
   text-align: center;
 }
-.coupon-price {
+.cutout-headline {
   font-size: 3em;
   text-shadow: 1px 0;
   margin-bottom: 0;
@@ -7212,9 +7212,8 @@ h4 {
 .button:hover {
   background-color: red;
 }
-.save-button {
+.brand-button {
   padding: 3px 20px 3px 20px;
-  /*width: 70%;*/
 }
 .header {
   font-size: 15px;
@@ -7246,16 +7245,26 @@ h4 {
   box-shadow: -15px 15px 20px -15px gray, 15px 15px 20px -15px gray;
   padding: 20px 15px;
 }
+.info-card {
+  margin-bottom: 5px;
+  padding: 20px 10px;
+}
+.divider-bottom {
+  border-bottom: solid 1px #bbbbbb;
+}
 .bottom-left {
   margin-bottom: 5px;
   padding: 20px 10px;
 }
 .bottom-right {
-  border-bottom: solid 1px #bbbbbb;
   margin-bottom: 5px;
   padding: 20px 10px;
 }
 .bottom-right p {
+  font-size: 1.15em;
+  padding-top: 14px;
+}
+.brand-copy p {
   font-size: 1.15em;
   padding-top: 14px;
 }
@@ -7297,12 +7306,12 @@ footer {
   text-transform: lowercase;
   text-align: right;
 }
-.layout-centered .coupon-details {
+.layout-centered .cutout-details {
   display: inline-block;
   vertical-align: middle;
   padding-right: 0px;
 }
-.layout-centered .coupon {
+.layout-centered .cutout {
   text-align: left;
   display: inline-block;
   margin-top: 0;
@@ -7352,12 +7361,14 @@ footer {
   text-align: center;
 }
 @media (min-width:992px) {
-  .bottom-right {
-    border-bottom: none;
-    padding: 20px 10px 20px 25px;
-  }
-  .bottom-left {
+  .divider-right {
     border-right: 1px solid #bbbbbb;
+  }
+  .divider-bottom {
+    border-bottom: none;
+  }
+  .info-card-right {
+    padding: 20px 10px 20px 25px;
   }
   .header {
     padding-left: 40px;
@@ -7371,7 +7382,7 @@ footer {
   }
 }
 @media (min-width:768px) {
-  .layout-centered .coupon-details {
+  .layout-centered .cutout-details {
     text-align: left;
     padding-right: 20px;
   }
