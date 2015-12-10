@@ -25,7 +25,7 @@
 
 
       //$code = anvil | glue | jet_propelled_unicycle
-      $code = 'glue';
+      $code = 'jet_propelled_unicycle';
       include 'assets/partials/_themes.php';
 
     ?>
@@ -49,15 +49,14 @@
         <div class="<?= $centered ? 'col-md-12 header centered' : 'col-md-7 col-md-push-4 header' ?>">
           <?= $headline; ?>
 
-          <?= $centered ?
-            ''
-            :'<br><a href="#promo" data-toggle="modal" alt="promo">
-                <button class="btn btn-primary button promo-button">
-                  <img class="promo-play" src="assets/images/play.png">
-                  WATCH VIDEO
-                </button>
-              </a>'
-          ?>
+          <? if (!$centered): ?>
+            <br><a href="#promo" data-toggle="modal" alt="promo">
+            <button class="btn btn-primary button promo-button">
+              <img class="promo-play" src="assets/images/play.png">
+              WATCH VIDEO
+              </button>
+            </a>
+          <? endif; ?>
 
           <div class="modal fade" id="promo" role="dialog">
             <div class="modal-dialog">
@@ -71,22 +70,37 @@
           </div>
 
         </div>
-        <div class="<?= $centered ? 'col-md-12 centered' : 'col-md-4 col-md-pull-7' ?>">
-          <div class="coupon">
-            <h1 class="coupon-price">
+        <div class="<?= $centered ? 'col-xs-12 centered' : 'col-md-4 col-md-pull-7' ?>">
 
-              <?= $couponPrice ? $couponPrice : "SEE DETAILS" ?>
+          <? if ($centered): ?>
+            <div class="promo-centered">
+              <a href="#promo" data-toggle="modal" alt="promo">
+              <img class="promo-play-centered" src="assets/images/play.png">
+            </a>
+            </div>
+          <? endif; ?>
 
-            </h1>
-            <h4>
 
-              <?= "on ".$companyName." ".$product; ?>
+          <div class="<?= 'coupon-'.$layout ?>">
 
-            </h4>
+            <div class="coupon-details">
+
+              <h1 class="coupon-price">
+                <?= $couponPrice ? $couponPrice : "SEE DETAILS" ?>
+              </h1>
+
+              <h4>
+                <?= "on ".$companyName." ".$product; ?>
+              </h4>
+            </div>
+
             <button class="btn btn-primary button save-button">
               GET COUPON NOW
             </button>
+
           </div>
+
+
         </div>
       </div>
     </div>
@@ -95,28 +109,25 @@
       <div class ="row bottom">
 
         <div class="col-md-6 col-sm-12 col-md-push-6 bottom-right">
-
           <?= $content; ?>
-
         </div>
 
         <div class="col-md-6 col-sm-12 col-md-pull-6 bottom-left">
           <h3>Available at these Fine Retailers</h3>
-          <div class= "row left-container">
-              <?
+          <div class= "<?= 'row left-container-'.$layout ?>">
+              <?php
                 $i=-1;
-                $size = '';
                 if ($vendors && count($vendors > 0)):
                   foreach ($vendors as $name => $link):
-                    $size = circleSize($i, $size);
+                    $size = $centered ? circleSize($i, $size) : " ";
                 ?>
                   <div class="<?= 'retail-link-'.$layout ?>">
                     <a href= <?= $link ?> class='btn'>
                       <div class="<?= $size.'retail-circle-'.$layout; ?>"></div>
-                      <div class='link'><?= $name ?></div>
+                      <div class="<?='link-'.$layout ?>"><?= $name ?></div>
                     </a>
                   </div>
-              <?
+              <?php
                 $i == 1 ? $i = 0 : $i++;
                 endforeach;
                 else:

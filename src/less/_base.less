@@ -33,7 +33,6 @@ h4 {
 .top {
   margin-top: 8%;
   padding: 20px;
-  padding-bottom: 60px;
 }
 
 .back {
@@ -43,7 +42,10 @@ h4 {
                 -15px 45px 20px -15px gray;
 }
 
-
+.coupon-details {
+  display: inline-block;
+  vertical-align: middle;
+}
 
 .coupon {
   background-color:rgba(255, 255, 255, 0.7);
@@ -51,16 +53,39 @@ h4 {
   box-shadow: 0px 0px 18px 1px gray;
   margin: auto;
   margin-top: 20px;
+}
+
+.coupon-centered {
+  .coupon;
+  display:inline-block;
+  margin-top: 0;
+  .align(left);
+  padding: 10px 30px;
+  margin: 20px
+}
+
+.coupon-default {
+  .coupon;
   max-width: 450px;
   padding: 10% 10%;
   .align();
 }
+
 
 .coupon-price {
   font-size: 3em;
   text-shadow: 1px 0;
   margin-bottom: 0;
   width: 100%;
+}
+
+.promo-centered {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 3px solid black;
+  box-shadow: 0 0 18px 1px gray;
+  padding: 30px;
 }
 
 .button {
@@ -78,19 +103,20 @@ h4 {
 
 .save-button {
   padding: 3px 20px 3px 20px;
-  width: 70%;
+  /*width: 70%;*/
+
 }
 
-.header {
+.header{
   font-size: 15px;
   margin-bottom: 5px;
-  padding-left: 40px;
   .align();
   p {
     font-size: 1.5em;
     padding-top: 4px;
   }
 }
+
 
 .headline {
   font-size: 3em;
@@ -111,6 +137,11 @@ h4 {
   height: 30px;
   margin-right: 5px;
   margin-left: 0;
+}
+
+.promo-play-centered {
+  height: 60px;
+  border-radius: @circle;
 }
 
 .bottom {
@@ -136,9 +167,14 @@ h4 {
 }
 
 
-.left-container {
+.left-container-default {
   padding-top: 14px;
   .align();
+}
+
+.left-container-centered {
+  padding-top: 14px;
+  .align(left);
 }
 
 .retail-circle-default {
@@ -158,7 +194,7 @@ h4 {
   height: 30px;
   width: 30px;
   float: left;
-  margin-left: 5px;
+  margin: 5px 0 5px 5px;
   &:hover {
     background-color: @theme-color;
   };
@@ -184,6 +220,7 @@ h4 {
   border-radius: @circle;
   height: 30px;
   width: 30px;
+  margin: 5px 0 5px 5px;
   float: left;
 }
 
@@ -200,8 +237,12 @@ h4 {
   text-align: left;
 }
 
-.link {
-  padding: 5px 10px;
+.link-centered {
+ padding: 10px 0 0 50px;
+}
+
+.link-default {
+ padding: 10px 0;
 }
 
 footer {
@@ -209,6 +250,11 @@ footer {
   text-transform: lowercase;
   .align(right);
 }
+
+.centered {
+  .align();
+}
+
 
 @media(@md-min) {
   .bottom-right {
@@ -221,17 +267,16 @@ footer {
   }
 
   .header {
+    padding-left: 40px;
     .align(left);
   }
+
+  .centered {
+  .align();
+}
 
   .logo {
     width: 250px;
   }
 
-  .centered {
-    .align();
-  }
-
 }
-
-
