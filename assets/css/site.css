@@ -7145,6 +7145,14 @@ button.close {
   font-weight: normal;
   font-style: normal;
 }
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+}
 .debug {
   border: 2px solid red;
 }

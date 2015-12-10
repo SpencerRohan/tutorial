@@ -56,6 +56,8 @@ Comp Reference:
 + Are Gulp helper files a thing? - Answered
 + Gulp practical uses outside of development.
 + Thoughts on naming conventions and clean code practices.
++ Ways to improve building/adjusting - any general notes?
+
 
 Would love any notes, feedback, and guidence on html & css practices. Anything look super hacky or amateur hour?
 
