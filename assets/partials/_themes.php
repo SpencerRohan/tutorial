@@ -35,7 +35,7 @@
                     <p>JET Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>",
       'layout'   => 'centered',
       'theme'    => ['hex'   => '#DCA65A',
-                     'color' => 'blue',
+                     'color' => 'deepskyblue',
                      'headline' => 'roboto_slab-bold',
                      'sm-headline' => 'roboto_slab',
                      'body' => 'helvetica']

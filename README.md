@@ -45,17 +45,17 @@ Confident in coding scale 1-10, Phase 2 was about an 7. There was a lot of new c
 
 #### Phase 3
 
-I found this very useful in a practical way. Setting up the files, updating my gulp task was a bit of a spider-web for a moment. I could have used some more direction when it came to file naming conventions and the asset pipeline. I really got to play with gulp on this phase, as well as php.
+Comp Reference:
+![image](assets/images/landing-page-alt.jpg)
 
 ##### Questions and Topics:
 
-+ Gulp usage, is setting up builders useful?
-+ Pulling in code, seperate css for themes?
-+ Pulling the site into sections - php or otherwise.
++ Gulp usage, is setting up builders useful? - Answered
++ Pulling the site into sections - php or otherwise. - Touched on with Scott
 + Incoroperating an actual database - would you query using PHP?
-+ Are Gulp helper files a thing?
-+ Gulp practical uses outside of live updating.
++ Are Gulp helper files a thing? - Answered
++ Gulp practical uses outside of development.
++ Thoughts on naming conventions and clean code practices.
 
 Would love any notes, feedback, and guidence on html & css practices. Anything look super hacky or amateur hour?
 
-Confident in coding scale 1-10, Phase 3 was about an 7/8. I think my asset pipeline could be a little better. I think if I had more direction with proper naming conventions and 'standards' I'd be more comofortable throwing stuff about. The concepts and coding wasn't too terrible.

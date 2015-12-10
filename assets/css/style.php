@@ -1,4 +1,4 @@
-.button, .retail-circle-centered, .retail-circle-default, .big-retail-circle-centered, .promo-play-centered{
+.button, .retail-circle-centered, .retail-circle-default, .big-retail-circle-centered, .promo-play-centered {
   background-color: <?= $theme['hex']; ?>;
 }
 

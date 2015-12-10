@@ -25,7 +25,7 @@
 
 
       //$code = anvil | glue | jet_propelled_unicycle
-      $code = 'glue';
+      $code = 'jet_propelled_unicycle';
       include 'assets/partials/_themes.php';
 
     ?>
