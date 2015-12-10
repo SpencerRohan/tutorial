@@ -15,12 +15,13 @@
   @font-sm-heading: @theme-sm-headline;
   @font-logo: @anchorjack;
 
-@background: "../images/background.png";
+@background: "../images/background-default.png";
   @image-background: url(@background) center;
 
 @circle: 999px;
 
 // Media queries
+@xs-min: ~'min-width:@{screen-xs-min}';
 @xs-max: ~'max-width:@{screen-xs-max}'; //assumes xs only
 @sm-max: ~'max-width:@{screen-sm-max}'; //assumes xs, sm
 @md-max: ~'max-width:@{screen-md-max}'; //assumes xs, sm, md

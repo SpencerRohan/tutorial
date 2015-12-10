@@ -7172,13 +7172,14 @@ h4 {
   padding: 20px;
 }
 .back {
-  background: url("../images/background.png") center;
+  background: url("../images/background-default.png") center;
   background-size: cover;
   box-shadow: 15px 45px 20px -15px gray, -15px 45px 20px -15px gray;
 }
-.coupon-details {
+.coupon-details-centered {
   display: inline-block;
   vertical-align: middle;
+  padding-right: 0px;
 }
 .coupon {
   background-color: rgba(255, 255, 255, 0.7);
@@ -7195,7 +7196,6 @@ h4 {
   margin-top: 20px;
   display: inline-block;
   margin-top: 0;
-  text-align: left;
   padding: 10px 30px;
   margin: 20px;
 }
@@ -7377,5 +7377,11 @@ footer {
   }
   .logo {
     width: 250px;
+  }
+}
+@media (min-width:768px) {
+  .coupon-details-centered {
+    text-align: left;
+    padding-right: 20px;
   }
 }

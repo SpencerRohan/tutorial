@@ -1,9 +1,13 @@
-.button, .retail-circle-centered, .retail-circle-default, .big-retail-circle-centered, .promo-play-centered {
+.button, .retail-circle-centered, .retail-circle-default, .big-retail-circle-centered, .promo-play-centered{
   background-color: <?= $theme['hex']; ?>;
 }
 
 .button:hover, .retail-circle-default:hover, .retail-circle-centered:hover, .big-retail-circle-centered:hover, .promo-play-centered:hover {
   background-color: <?= $theme['color']; ?>;
+}
+
+a:hover {
+  color: <?= $theme['hex']; ?>;
 }
 
 h1 {
@@ -16,4 +20,8 @@ h3 {
 
 body {
   font-family: <?= $theme['body']; ?>;
+}
+
+.back {
+  background: url(<?= 'assets/images/background-'.$layout.'.png' ?>) center;
 }

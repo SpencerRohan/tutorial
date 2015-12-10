@@ -25,7 +25,7 @@
 
 
       //$code = anvil | glue | jet_propelled_unicycle
-      $code = 'jet_propelled_unicycle';
+      $code = 'glue';
       include 'assets/partials/_themes.php';
 
     ?>
@@ -83,7 +83,7 @@
 
           <div class="<?= 'coupon-'.$layout ?>">
 
-            <div class="coupon-details">
+            <div class="<?= 'coupon-details-'.$layout ?>">
 
               <h1 class="coupon-price">
                 <?= $couponPrice ? $couponPrice : "SEE DETAILS" ?>

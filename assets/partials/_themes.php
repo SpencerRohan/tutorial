@@ -21,8 +21,8 @@
       'content'  => "<h3>ACME Product Line-up</h3>
                     <p>GLUE Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>",
       'layout'   => 'centered',
-      'theme'    => ['hex'   => '#B7AF1F',
-                     'color' => 'blue',
+      'theme'    => ['hex'   => '#00bff3',
+                     'color' => 'violet',
                      'headline' => 'oswald-heavy',
                      'sm-headline' => 'oswald-bold',
                      'body' => 'helvetica']
