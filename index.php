@@ -25,7 +25,7 @@
 
 
       //$code = anvil | glue | jet_propelled_unicycle
-      $code = 'jet_propelled_unicycle';
+      $code = 'glue';
       include 'assets/partials/_themes.php';
 
     ?>
@@ -40,7 +40,7 @@
 
   </head>
 
-  <body>
+  <body class="<?= 'layout-'.$layout ?>">
     <div class="logo-bar">
       <img class="logo" src="assets/images/block_title.png" >
     </div>
@@ -75,15 +75,15 @@
           <? if ($centered): ?>
             <div class="promo-centered">
               <a href="#promo" data-toggle="modal" alt="promo">
-              <img class="promo-play-centered" src="assets/images/play.png">
+              <img class="promo-play" src="assets/images/play.png">
             </a>
             </div>
           <? endif; ?>
 
 
-          <div class="<?= 'coupon-'.$layout ?>">
+          <div class="coupon">
 
-            <div class="<?= 'coupon-details-'.$layout ?>">
+            <div class="coupon-details centered">
 
               <h1 class="coupon-price">
                 <?= $couponPrice ? $couponPrice : "SEE DETAILS" ?>
@@ -114,17 +114,17 @@
 
         <div class="col-md-6 col-sm-12 col-md-pull-6 bottom-left">
           <h3>Available at these Fine Retailers</h3>
-          <div class= "<?= 'row left-container-'.$layout ?>">
+          <div class= "row left-container">
               <?php
                 $i=-1;
                 if ($vendors && count($vendors > 0)):
                   foreach ($vendors as $name => $link):
                     $size = $centered ? circleSize($i, $size) : " ";
                 ?>
-                  <div class="<?= 'retail-link-'.$layout ?>">
+                  <div class="retail-link">
                     <a href= <?= $link ?> class='btn'>
-                      <div class="<?= $size.'retail-circle-'.$layout; ?>"></div>
-                      <div class="<?='link-'.$layout ?>"><?= $name ?></div>
+                      <div class="<?= $size.'retail-circle' ?>"></div>
+                      <div class="link"><?= $name ?></div>
                     </a>
                   </div>
               <?php
@@ -135,7 +135,7 @@
                 <h3>Check back soon!</h3>
               <? endif;
                 if ($centered && count($vendors) % 2 != 0 ): ?>
-                <div class="retail-link-centered cursor-auto">
+                <div class="retail-link cursor-auto">
                   <div class='btn cursor-auto'>
                     <div class='retail-circle-spacer'></div>
                     <div class='link'></div>

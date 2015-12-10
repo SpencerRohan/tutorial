@@ -1,10 +1,10 @@
-.button, .retail-circle-centered, .retail-circle-default, .big-retail-circle-centered, .promo-play-centered, .button:focus, .button:active, .btn:active {
+.button, .retail-circle, .layout-centered .retail-circle, .layout-centered .big-retail-circle, .layout-centered .promo-play, .button:focus, .button:active{
   background-color: <?= $theme['hex']; ?>;
   outline: none;
 }
 
 
-.button:hover, .retail-circle-default:hover, .retail-circle-centered:hover, .big-retail-circle-centered:hover, .promo-play-centered:hover {
+.button:hover, .retail-circle:hover, .retail-circle:hover, .layout-centered .big-retail-circle:hover, .promo-play:hover {
   background-color: <?= $theme['color']; ?>;
 }
 
@@ -28,6 +28,7 @@ h3 {
 body {
   font-family: <?= $theme['body']; ?>;
 }
+
 
 .back {
   background: url(<?= 'assets/images/background-'.$layout.'.png' ?>) center;

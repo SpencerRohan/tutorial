@@ -43,32 +43,12 @@ h4 {
 }
 
 
-.coupon-details-centered {
-  display: inline-block;
-  vertical-align: middle;
-  padding-right: 0px;
-}
-
-
 .coupon {
   background-color:rgba(255, 255, 255, 0.7);
   border: 4px black dashed;
   box-shadow: 0px 0px 18px 1px gray;
   margin: auto;
   margin-top: 20px;
-}
-
-.coupon-centered {
-  .coupon;
-  display:inline-block;
-  margin-top: 0;
-  padding: 10px 30px;
-  margin: 20px
-
-}
-
-.coupon-default {
-  .coupon;
   max-width: 450px;
   padding: 10% 10%;
   .align();
@@ -80,15 +60,6 @@ h4 {
   text-shadow: 1px 0;
   margin-bottom: 0;
   width: 100%;
-}
-
-.promo-centered {
-  display: inline-block;
-  vertical-align: middle;
-  background-color: rgba(0, 0, 0, 0.8);
-  border: 3px solid black;
-  box-shadow: 0 0 18px 1px gray;
-  padding: 30px;
 }
 
 .button {
@@ -142,11 +113,6 @@ h4 {
   margin-left: 0;
 }
 
-.promo-play-centered {
-  height: 60px;
-  border-radius: @circle;
-}
-
 .bottom {
   background-color: white;
   box-shadow: -15px 15px 20px -15px gray,
@@ -169,18 +135,12 @@ h4 {
   }
 }
 
-
-.left-container-default {
+.left-container {
   padding-top: 14px;
   .align();
 }
 
-.left-container-centered {
-  padding-top: 14px;
-  .align(left);
-}
-
-.retail-circle-default {
+.retail-circle {
   background-color: @theme-hex;
   border-radius: @circle;
   height: 30px;
@@ -189,33 +149,6 @@ h4 {
   &:hover {
     background-color: @theme-color;
   };
-}
-
-.retail-circle-centered {
-  background-color: @theme-hex;
-  border-radius: @circle;
-  height: 30px;
-  width: 30px;
-  float: left;
-  margin: 5px 0 5px 5px;
-  &:hover {
-    background-color: @theme-color;
-  };
-}
-
-.big-retail-circle-centered {
-  background-color: @theme-hex;
-  border-radius: @circle;
-  height: 40px;
-  width: 40px;
-  float: left;
-  &:hover {
-    background-color: @theme-color;
-  };
-}
-
-.cursor-auto {
-  cursor: auto;
 }
 
 .retail-circle-spacer {
@@ -227,26 +160,20 @@ h4 {
   float: left;
 }
 
-.retail-link-default{
+.cursor-auto {
+  cursor: auto;
+}
+
+.retail-link{
   text-align: center;
   width: 30%;
   display: inline-block;
 }
 
-
-.retail-link-centered {
-  width: 40%;
-  display: inline-block;
-  text-align: left;
-}
-
-.link-centered {
- padding: 10px 0 0 50px;
-}
-
-.link-default {
+.link {
  padding: 10px 0;
 }
+
 
 footer {
   margin-top: 10px;
@@ -254,9 +181,80 @@ footer {
   .align(right);
 }
 
-.centered {
-  .align();
+
+
+.layout-centered {
+
+
+
+  .coupon-details {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 0px;
+  }
+
+  .coupon {
+    .align(left);
+    display:inline-block;
+    margin-top: 0;
+    max-width: 100%;
+    padding: 10px 30px;
+    margin: 20px;
+  }
+
+  .promo-centered {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 3px solid black;
+    box-shadow: 0 0 18px 1px gray;
+    display: inline-block;
+    padding: 30px;
+    vertical-align: middle;
+  }
+
+  .promo-play {
+    border-radius: @circle;
+    height: 60px;
+    margin: 0;
+  }
+
+  .left-container {
+    .align(left);
+  }
+
+  .retail-circle {
+    float: left;
+    margin: 5px 0 5px 5px;
+  }
+
+  .big-retail-circle {
+      background-color: @theme-hex;
+    border-radius: @circle;
+    height: 40px;
+    width: 40px;
+    float: left;
+    &:hover {
+      background-color: @theme-color;
+    };
+
+  }
+
+  .link {
+    padding: 10px 0 0 50px;
+  }
+
+  .retail-link {
+    width: 40%;
+    display: inline-block;
+    text-align: left;
+  }
+
+  .centered {
+    .align();
+  }
+
 }
+
+
 
 
 @media(@md-min) {
@@ -274,22 +272,35 @@ footer {
     .align(left);
   }
 
-  .centered {
-    .align();
-  }
 
   .logo {
     width: 250px;
   }
 
+  .layout-centered {
+    .centered {
+      .align();
+    }
+  }
 
 
 }
 
 @media (@sm-min) {
-  .coupon-details-centered {
-    .align(left);
-    padding-right: 20px;
+
+  .layout-centered {
+    .coupon-details {
+      .align(left);
+      padding-right: 20px;
+    }
   }
 }
+
+
+
+
+
+
+
+
 

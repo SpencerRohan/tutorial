@@ -7184,30 +7184,7 @@ h4 {
   background-size: cover;
   box-shadow: 15px 45px 20px -15px gray, -15px 45px 20px -15px gray;
 }
-.coupon-details-centered {
-  display: inline-block;
-  vertical-align: middle;
-  padding-right: 0px;
-}
 .coupon {
-  background-color: rgba(255, 255, 255, 0.7);
-  border: 4px black dashed;
-  box-shadow: 0px 0px 18px 1px gray;
-  margin: auto;
-  margin-top: 20px;
-}
-.coupon-centered {
-  background-color: rgba(255, 255, 255, 0.7);
-  border: 4px black dashed;
-  box-shadow: 0px 0px 18px 1px gray;
-  margin: auto;
-  margin-top: 20px;
-  display: inline-block;
-  margin-top: 0;
-  padding: 10px 30px;
-  margin: 20px;
-}
-.coupon-default {
   background-color: rgba(255, 255, 255, 0.7);
   border: 4px black dashed;
   box-shadow: 0px 0px 18px 1px gray;
@@ -7222,14 +7199,6 @@ h4 {
   text-shadow: 1px 0;
   margin-bottom: 0;
   width: 100%;
-}
-.promo-centered {
-  display: inline-block;
-  vertical-align: middle;
-  background-color: rgba(0, 0, 0, 0.8);
-  border: 3px solid black;
-  box-shadow: 0 0 18px 1px gray;
-  padding: 30px;
 }
 .button {
   background-color: #981b1e;
@@ -7272,10 +7241,6 @@ h4 {
   margin-right: 5px;
   margin-left: 0;
 }
-.promo-play-centered {
-  height: 60px;
-  border-radius: 999px;
-}
 .bottom {
   background-color: white;
   box-shadow: -15px 15px 20px -15px gray, 15px 15px 20px -15px gray;
@@ -7294,47 +7259,19 @@ h4 {
   font-size: 1.15em;
   padding-top: 14px;
 }
-.left-container-default {
+.left-container {
   padding-top: 14px;
   text-align: center;
 }
-.left-container-centered {
-  padding-top: 14px;
-  text-align: left;
-}
-.retail-circle-default {
+.retail-circle {
   background-color: #981b1e;
   border-radius: 999px;
   height: 30px;
   width: 30px;
   margin: auto;
 }
-.retail-circle-default:hover {
+.retail-circle:hover {
   background-color: red;
-}
-.retail-circle-centered {
-  background-color: #981b1e;
-  border-radius: 999px;
-  height: 30px;
-  width: 30px;
-  float: left;
-  margin: 5px 0 5px 5px;
-}
-.retail-circle-centered:hover {
-  background-color: red;
-}
-.big-retail-circle-centered {
-  background-color: #981b1e;
-  border-radius: 999px;
-  height: 40px;
-  width: 40px;
-  float: left;
-}
-.big-retail-circle-centered:hover {
-  background-color: red;
-}
-.cursor-auto {
-  cursor: auto;
 }
 .retail-circle-spacer {
   background-color: white;
@@ -7344,20 +7281,15 @@ h4 {
   margin: 5px 0 5px 5px;
   float: left;
 }
-.retail-link-default {
+.cursor-auto {
+  cursor: auto;
+}
+.retail-link {
   text-align: center;
   width: 30%;
   display: inline-block;
 }
-.retail-link-centered {
-  width: 40%;
-  display: inline-block;
-  text-align: left;
-}
-.link-centered {
-  padding: 10px 0 0 50px;
-}
-.link-default {
+.link {
   padding: 10px 0;
 }
 footer {
@@ -7365,7 +7297,58 @@ footer {
   text-transform: lowercase;
   text-align: right;
 }
-.centered {
+.layout-centered .coupon-details {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 0px;
+}
+.layout-centered .coupon {
+  text-align: left;
+  display: inline-block;
+  margin-top: 0;
+  max-width: 100%;
+  padding: 10px 30px;
+  margin: 20px;
+}
+.layout-centered .promo-centered {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 3px solid black;
+  box-shadow: 0 0 18px 1px gray;
+  display: inline-block;
+  padding: 30px;
+  vertical-align: middle;
+}
+.layout-centered .promo-play {
+  border-radius: 999px;
+  height: 60px;
+  margin: 0;
+}
+.layout-centered .left-container {
+  text-align: left;
+}
+.layout-centered .retail-circle {
+  float: left;
+  margin: 5px 0 5px 5px;
+}
+.layout-centered .big-retail-circle {
+  background-color: #981b1e;
+  border-radius: 999px;
+  height: 40px;
+  width: 40px;
+  float: left;
+}
+.layout-centered .big-retail-circle:hover {
+  background-color: red;
+}
+.layout-centered .link {
+  padding: 10px 0 0 50px;
+}
+.layout-centered .retail-link {
+  width: 40%;
+  display: inline-block;
+  text-align: left;
+}
+.layout-centered .centered {
   text-align: center;
 }
 @media (min-width:992px) {
@@ -7380,15 +7363,15 @@ footer {
     padding-left: 40px;
     text-align: left;
   }
-  .centered {
-    text-align: center;
-  }
   .logo {
     width: 250px;
   }
+  .layout-centered .centered {
+    text-align: center;
+  }
 }
 @media (min-width:768px) {
-  .coupon-details-centered {
+  .layout-centered .coupon-details {
     text-align: left;
     padding-right: 20px;
   }
