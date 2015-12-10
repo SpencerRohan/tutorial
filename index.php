@@ -24,7 +24,7 @@
       };
 
       //$code = anvil | glue | jet_propelled_unicycle
-      $code = 'glue';
+      $code = 'anvil';
       include 'assets/partials/_themes.php';
 
     ?>
@@ -40,19 +40,22 @@
   </head>
 
   <body class="<?= 'layout-'.$layout ?>">
+
     <div class="logo-bar">
       <img class="logo" src="assets/images/block_title.png" >
     </div>
+
     <div class="container back box-shadow">
       <div class ="row spotlight">
         <div class="<?= $centered ? 'col-md-12 header centered' : 'col-md-7 col-md-push-4 header' ?>">
           <?= $headline; ?>
 
           <? if (!$centered): ?>
-            <br><a href="#promo" data-toggle="modal" alt="promo">
-            <button class="btn btn-primary button promo-button">
-              <img class="promo-play" src="assets/images/play.png">
-              WATCH VIDEO
+            <br>
+            <a href="#promo" data-toggle="modal" alt="promo">
+              <button class="btn btn-primary button promo-button">
+                <img class="promo-play" src="assets/images/play.png">
+                WATCH VIDEO
               </button>
             </a>
           <? endif; ?>
@@ -80,7 +83,7 @@
           <? endif; ?>
 
 
-          <div class="cutout">
+          <div class="cutout centered">
 
             <div class="cutout-details centered">
 
@@ -107,13 +110,13 @@
     <div class="container">
       <div class ="row bottom">
 
-        <div class="col-md-6 col-sm-12 col-md-push-6 info-card divider-bottom brand-copy info-card-right">
+        <div class="col-md-6 col-sm-12 col-md-push-6 info-card divider-bottom brand-copy copy-pad">
           <?= $content; ?>
         </div>
 
         <div class="col-md-6 col-sm-12 col-md-pull-6 info-card divider-right">
           <h3>Available at these Fine Retailers</h3>
-          <div class= "row link-container">
+          <div class="row link-container">
 
               <?php
                 $i=-1;

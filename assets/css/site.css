@@ -7252,23 +7252,11 @@ h4 {
 .divider-bottom {
   border-bottom: solid 1px #bbbbbb;
 }
-.bottom-left {
-  margin-bottom: 5px;
-  padding: 20px 10px;
-}
-.bottom-right {
-  margin-bottom: 5px;
-  padding: 20px 10px;
-}
-.bottom-right p {
-  font-size: 1.15em;
-  padding-top: 14px;
-}
 .brand-copy p {
   font-size: 1.15em;
   padding-top: 14px;
 }
-.left-container {
+.link-container {
   padding-top: 14px;
   text-align: center;
 }
@@ -7367,7 +7355,7 @@ footer {
   .divider-bottom {
     border-bottom: none;
   }
-  .info-card-right {
+  .copy-pad {
     padding: 20px 10px 20px 25px;
   }
   .header {
