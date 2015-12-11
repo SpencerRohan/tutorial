@@ -20,7 +20,7 @@
                       <p>Crush pesky roadrunners with ease.</p>",
         'content'  => "<h3>ACME Product Line-up</h3>
                       <p>ANVIL Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>",
-        'layout'   => 'default',
+        'layout'   => 'centered',
         'video'    => '//www.youtube.com/embed/NpEaa2P7qZI',
         'theme'    => [
                         'hex'         => '#981b1e',
