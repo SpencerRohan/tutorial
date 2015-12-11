@@ -40,7 +40,6 @@ body {
   font-family: <?= $theme['body']; ?>;
 }
 
-
 .-background {
   background: url(<?= 'assets/images/background-'.$layout.'.png' ?>) center;
 }

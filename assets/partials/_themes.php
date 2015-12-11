@@ -1,12 +1,25 @@
 <?php
 
-  $data = [
+  class Theme {
+      function __construct($param) {
+        $this->product = $param['product'];
+        $this->headline = "<h1 class='-headline'>Stop Accelerate Incredibilus in his tracks.</h1>
+                           <p>Crush pesky roadrunners with ease.</p>";
+        $this->content = "<h3>ACME Product Line-up</h3>
+                          <p>".$param['product']." Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>";
+        $this->layout = $param['layout'];
+        $this->centered = $param['layout'] == 'centered';
+        $this->theme = $param['theme'];
+      }
+
+  }
+
+
+
+
+  $themeData = [
     'anvil'=> [
       'product'  => 'Anvil',
-      'headline' => "<h1 class='-headline'>Stop Accelerate Incredibilus in his tracks.</h1>
-                    <p>Crush pesky roadrunners with ease.</p>",
-      'content'  => "<h3>ACME Product Line-up</h3>
-                    <p>ANVIL Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>",
       'layout'   => 'default',
       'theme'    => ['hex'   => '#981b1e',
                      'color' => 'red',
@@ -16,10 +29,6 @@
     ],
     'glue'=> [
       'product'  => 'Glue',
-      'headline' => "<h1 class='-headline'>Stop Accelerate Incredibilus in his tracks.</h1>
-                    <p>Crush pesky roadrunners with ease.</p>",
-      'content'  => "<h3>ACME Product Line-up</h3>
-                    <p>GLUE Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>",
       'layout'   => 'centered',
       'theme'    => ['hex'   => '#00bff3',
                      'color' => 'violet',
@@ -29,10 +38,6 @@
     ],
     'jet_propelled_unicycle'=> [
       'product'  => 'Jet Propelled Unicycle',
-      'headline' => "<h1 class='-headline'>Stop Accelerate Incredibilus in his tracks.</h1>
-                    <p>Crush pesky roadrunners with ease.</p>",
-      'content'  => "<h3>ACME Product Line-up</h3>
-                    <p>JET Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>",
       'layout'   => 'centered',
       'theme'    => ['hex'   => '#DCA65A',
                      'color' => 'deepskyblue',
@@ -42,17 +47,17 @@
     ],
   ];
 
-  if (!$code || !$data[$code]) {
+  if (!$code || !$themeData[$code]) {
     $code = 'anvil';
   };
 
+  $currentTheme = new Theme($themeData[$code]);
 
-  $product  = $data[$code]['product'];
-  $headline = $data[$code]['headline'];
-  $content  = $data[$code]['content'];
-  $layout   = $data[$code]['layout'];
-  $theme    = $data[$code]['theme'];
-  if ($layout == 'centered') {
-    $centered = true;
-  } else {$centered = false;};
+
+  $product  = $currentTheme->product;
+  $headline = $currentTheme->headline;
+  $content  = $currentTheme->content;
+  $layout   = $currentTheme->layout;
+  $centered = $currentTheme->centered;
+  $theme    = $currentTheme->theme;
 ?>

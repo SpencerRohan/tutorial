@@ -8,21 +8,19 @@
 
 
     <?php
+      include 'assets/partials/_themes.php';
       $companyName = "ACME";
       $couponPrice = "$6.00 OFF!";
+      $code = 'glue';
+      //$code = anvil | glue | jet_propelled_unicycle
 
 
-    function circleSize($count, $size) {
+      function circleSize($count, $size) {
         if ($count == 0) {
           $size = ($size == '-big' ? ' ' : '-big');
         }
         return $size;
       };
-
-      //$code = anvil | glue | jet_propelled_unicycle
-      $code = 'glue';
-      include 'assets/partials/_themes.php';
-
     ?>
 
 
@@ -32,7 +30,6 @@
     <style>
       <? include 'assets/css/style.php'; ?>
     </style>
-
   </head>
 
   <body class="<?= 'layout-'.$layout ?>">
@@ -43,6 +40,7 @@
 
     <div class="container spotlight -background">
       <div class ="row spotlight__row">
+
         <div class="<?= $centered ? 'col-md-12 --header --centered' : 'col-md-7 col-md-push-4 --header' ?>">
           <?= $headline; ?>
 
@@ -68,23 +66,21 @@
               </div>
             </div>
           </div>
-
         </div>
-        <div class="<?= $centered ? 'col-xs-12 --centered' : 'col-md-4 col-md-pull-7' ?>">
 
+
+        <div class="<?= $centered ? 'col-xs-12 --centered' : 'col-md-4 col-md-pull-7' ?>">
           <? if ($centered): ?>
             <div class="promo">
               <a href="#promo" data-toggle="modal" alt="promo">
-              <img class="promo__image" src="assets/images/play.png">
-            </a>
+                <img class="promo__image" src="assets/images/play.png">
+              </a>
             </div>
           <? endif; ?>
 
 
           <div class="cutout --centered">
-
             <div class="cutout__details --centered">
-
               <h1 class="cutout__headline">
                 <?= $couponPrice ? $couponPrice : "SEE DETAILS" ?>
               </h1>
@@ -97,10 +93,7 @@
             <button class="btn btn-primary btn-brand">
               GET COUPON NOW
             </button>
-
           </div>
-
-
         </div>
       </div>
     </div>
@@ -119,7 +112,6 @@
         </div>
       </div>
     </div>
-
   </body>
 
   <footer>
