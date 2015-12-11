@@ -41,23 +41,25 @@
 
   <body class="<?= 'layout-'.$layout ?>">
 
-    <div class="logo-bar">
-      <img class="logo" src="assets/images/block_title.png" >
+    <div class="logo">
+      <img class="logo__image" src="assets/images/block_title.png" >
     </div>
 
-    <div class="container back box-shadow">
-      <div class ="row spotlight">
-        <div class="<?= $centered ? 'col-md-12 header centered' : 'col-md-7 col-md-push-4 header' ?>">
+    <div class="container spotlight -background">
+      <div class ="row spotlight__row">
+        <div class="<?= $centered ? 'col-md-12 --header centered' : 'col-md-7 col-md-push-4 --header' ?>">
           <?= $headline; ?>
 
           <? if (!$centered): ?>
+            <span class="promo">
             <br>
             <a href="#promo" data-toggle="modal" alt="promo">
-              <button class="btn btn-primary button promo-button">
-                <img class="promo-play" src="assets/images/play.png">
+              <button class="btn btn-primary promo__button">
+                <img class="promo__image" src="assets/images/play.png">
                 WATCH VIDEO
               </button>
             </a>
+          </span>
           <? endif; ?>
 
           <div class="modal fade" id="promo" role="dialog">
@@ -75,9 +77,9 @@
         <div class="<?= $centered ? 'col-xs-12 centered' : 'col-md-4 col-md-pull-7' ?>">
 
           <? if ($centered): ?>
-            <div class="promo-centered">
+            <div class="promo">
               <a href="#promo" data-toggle="modal" alt="promo">
-              <img class="promo-play" src="assets/images/play.png">
+              <img class="promo__image" src="assets/images/play.png">
             </a>
             </div>
           <? endif; ?>
@@ -85,9 +87,9 @@
 
           <div class="cutout centered">
 
-            <div class="cutout-details centered">
+            <div class="cutout__details centered">
 
-              <h1 class="cutout-headline">
+              <h1 class="cutout__headline">
                 <?= $couponPrice ? $couponPrice : "SEE DETAILS" ?>
               </h1>
 
@@ -96,7 +98,7 @@
               </h4>
             </div>
 
-            <button class="btn btn-primary button brand-button">
+            <button class="btn btn-primary btn-brand">
               GET COUPON NOW
             </button>
 
@@ -107,27 +109,26 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class ="row bottom">
-
-        <div class="col-md-6 col-sm-12 col-md-push-6 info-card divider-bottom brand-copy copy-pad">
+    <div class="container article">
+      <div class ="row article__row">
+        <div class="col-md-6 col-sm-12 col-md-push-6 --card -divider-bottom --copy --copy-pad">
           <?= $content; ?>
         </div>
 
-        <div class="col-md-6 col-sm-12 col-md-pull-6 info-card divider-right">
+        <div class="col-md-6 col-sm-12 col-md-pull-6 --card -divider-right">
           <h3>Available at these Fine Retailers</h3>
           <div class="row link-container">
 
               <?php
                 $i=-1;
-                if ($vendors && count($vendors > 0)):
+                if (count($vendors > 0)):
                   foreach ($vendors as $name => $link):
                     $size = $centered ? circleSize($i, $size) : " ";
                 ?>
                   <div class="retail-link">
                     <a href= <?= $link ?> class='btn'>
                       <div class="<?= $size.'retail-circle' ?>"></div>
-                      <div class="link"><?= $name ?></div>
+                      <span class="link"><?= $name ?></span>
                     </a>
                   </div>
               <?php
@@ -141,7 +142,7 @@
                 <div class="retail-link cursor-auto">
                   <div class='btn cursor-auto'>
                     <div class='retail-circle-spacer'></div>
-                    <div class='link'></div>
+                    <span class='link'></span>
                   </div>
                 </div>
               <? endif; ?>
@@ -151,6 +152,9 @@
 
       </div>
     </div>
+
+
+
   </body>
 
   <footer>

@@ -1,4 +1,4 @@
-//QUICK HELPER FOR GULP FILE
+//QUICK HELPER FOR GULP FILE -- NOT NECESSARY FILE SANDBOX
 
 function Theme(data){
   this.product  = data['product'];

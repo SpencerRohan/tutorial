@@ -3,7 +3,7 @@
   $data = [
     'anvil'=> [
       'product'  => 'Anvil',
-      'headline' => "<h1 class='headline'>Stop Accelerate Incredibilus in his tracks.</h1>
+      'headline' => "<h1 class='-headline'>Stop Accelerate Incredibilus in his tracks.</h1>
                     <p>Crush pesky roadrunners with ease.</p>",
       'content'  => "<h3>ACME Product Line-up</h3>
                     <p>ANVIL Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>",
@@ -16,7 +16,7 @@
     ],
     'glue'=> [
       'product'  => 'Glue',
-      'headline' => "<h1 class='headline'>Stop Accelerate Incredibilus in his tracks.</h1>
+      'headline' => "<h1 class='-headline'>Stop Accelerate Incredibilus in his tracks.</h1>
                     <p>Crush pesky roadrunners with ease.</p>",
       'content'  => "<h3>ACME Product Line-up</h3>
                     <p>GLUE Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>",
@@ -29,7 +29,7 @@
     ],
     'jet_propelled_unicycle'=> [
       'product'  => 'Jet Propelled Unicycle',
-      'headline' => "<h1 class='headline'>Stop Accelerate Incredibilus in his tracks.</h1>
+      'headline' => "<h1 class='-headline'>Stop Accelerate Incredibilus in his tracks.</h1>
                     <p>Crush pesky roadrunners with ease.</p>",
       'content'  => "<h3>ACME Product Line-up</h3>
                     <p>JET Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>",

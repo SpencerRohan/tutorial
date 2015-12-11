@@ -1,25 +1,19 @@
-.button, .retail-circle, .button:focus, .button:active{
+.btn-primary, .retail-circle, .btn-primary:focus, .btn-primary:active {
   background-color: <?= $theme['hex']; ?>;
   outline: none;
 }
 
-.layout-centered .retail-circle, .layout-centered .big-retail-circle, .layout-centered .promo-play {
-  background-color: <?= $theme['hex']; ?>;
-  outline: none;
-}
-
-
-
-.button:hover, .retail-circle:hover, .promo-play:hover, .layout-centered .retail-circle:hover, .layout-centered .big-retail-circle:hover {
+.btn-primary:hover, .retail-circle:hover, .layout-centered .retail-circle:hover, .layout-centered .big-retail-circle:hover {
   background-color: <?= $theme['color']; ?>;
 }
 
 
+.layout-centered .retail-circle, .layout-centered .big-retail-circle, .layout-centered .promo__image {
+  background-color: <?= $theme['hex']; ?>;
+  outline: none;
+}
 
-
-
-
-.button:hover, .retail-circle:hover, .retail-circle:hover, .layout-centered .big-retail-circle:hover, .promo-play:hover {
+.btn-primary:hover, .retail-circle:hover, .retail-circle:hover, .layout-centered .big-retail-circle:hover, .promo-play:hover {
   background-color: <?= $theme['color']; ?>;
 }
 
@@ -45,6 +39,6 @@ body {
 }
 
 
-.back {
+.-background {
   background: url(<?= 'assets/images/background-'.$layout.'.png' ?>) center;
 }
