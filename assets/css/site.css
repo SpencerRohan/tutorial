@@ -6994,7 +6994,7 @@ footer {
 .layout-centered .vendor .--circle-big:hover {
   background-color: red;
 }
-.layout-centered .vendor .--name {
+.layout-centered .vendor .vendor__name {
   padding: 10px 0 0 50px;
 }
 .layout-centered .--centered {

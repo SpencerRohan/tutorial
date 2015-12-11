@@ -128,7 +128,7 @@
                   <div class="vendor__link">
                     <a href= <?= $link ?> class='btn'>
                       <div class="<?= '--circle'.$size ?>"></div>
-                      <span class="vendor__name"><?= $name ?></span>
+                      <div class="vendor__name"><?= $name ?></div>
                     </a>
                   </div>
               <?php
@@ -142,7 +142,7 @@
                 <div class="vendor__link -cursor-auto">
                   <div class='btn -cursor-auto'>
                     <div class='--circle-spacer'></div>
-                    <span class='vendor__name'></span>
+                    <div class='vendor__name'></div>
                   </div>
                 </div>
               <? endif; ?>
