@@ -1,29 +1,31 @@
-.btn-primary, .retail-circle, .btn-primary:focus, .btn-primary:active {
+.btn-primary,
+.btn-primary:active:focus,
+.btn-primary:focus,
+.layout-centered .btn-primary:focus,
+.vendor .--circle {
   background-color: <?= $theme['hex']; ?>;
   outline: none;
 }
 
-.btn-primary:hover, .retail-circle:hover, .layout-centered .retail-circle:hover, .layout-centered .big-retail-circle:hover {
+.btn-primary:hover,
+.vendor .--circle:hover,
+.layout-centered .--circle:hover,
+.layout-centered .vendor .--circle-big:hover,
+.layout-centered .promo .promo__image:hover {
   background-color: <?= $theme['color']; ?>;
+  outline: none;
 }
 
 
-.layout-centered .retail-circle, .layout-centered .big-retail-circle, .layout-centered .promo__image {
+.vendor .--circle,
+.layout-centered .vendor .--circle-big,
+.layout-centered .promo .promo__image {
   background-color: <?= $theme['hex']; ?>;
   outline: none;
 }
 
-.btn-primary:hover, .retail-circle:hover, .retail-circle:hover, .layout-centered .big-retail-circle:hover, .promo-play:hover {
-  background-color: <?= $theme['color']; ?>;
-}
-
-a:active, a:focus {
-  outline: none;
-}
-
-a:hover {
+a:active, a:hover {
   color: <?= $theme['hex']; ?>;
-  outline: none;
 }
 
 h1 {

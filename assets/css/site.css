@@ -6799,6 +6799,19 @@ button.close {
 .debug {
   border: 2px solid red;
 }
+a {
+  outline: none;
+}
+a:hover {
+  outline: none;
+}
+a:active {
+  outline: none;
+}
+a:focus {
+  outline: none;
+  color: #555555;
+}
 h3 {
   font-family: 'ralewayextrabold';
   margin: 0;
@@ -6833,6 +6846,9 @@ h4 {
 }
 .btn-brand {
   padding: 3px 20px 3px 20px;
+}
+.-cursor-auto {
+  cursor: auto;
 }
 .logo {
   background-color: #000000;
@@ -6895,21 +6911,26 @@ h4 {
   font-size: 1.15em;
   padding-top: 14px;
 }
-.link-container {
+.vendor {
   padding-top: 14px;
   text-align: center;
 }
-.retail-circle {
+.vendor .vendor__link {
+  text-align: center;
+  width: 30%;
+  display: inline-block;
+}
+.vendor .--circle {
   background-color: #981b1e;
   border-radius: 999px;
   height: 30px;
   width: 30px;
   margin: auto;
 }
-.retail-circle:hover {
+.vendor .--circle:hover {
   background-color: red;
 }
-.retail-circle-spacer {
+.vendor .--circle-spacer {
   background-color: white;
   border-radius: 999px;
   height: 30px;
@@ -6917,15 +6938,7 @@ h4 {
   margin: 5px 0 5px 5px;
   float: left;
 }
-.retail-link {
-  text-align: center;
-  width: 30%;
-  display: inline-block;
-}
-.cursor-auto {
-  cursor: auto;
-}
-.link {
+.vendor .vendor__name {
   padding: 10px 0;
 }
 footer {
@@ -6959,32 +6972,32 @@ footer {
   height: 60px;
   margin: 0;
 }
-.layout-centered .left-container {
+.layout-centered .vendor {
   text-align: left;
 }
-.layout-centered .retail-circle {
+.layout-centered .vendor .vendor__link {
+  width: 40%;
+  display: inline-block;
+  text-align: left;
+}
+.layout-centered .vendor .--circle {
   float: left;
   margin: 5px 0 5px 5px;
 }
-.layout-centered .big-retail-circle {
+.layout-centered .vendor .--circle-big {
   background-color: #981b1e;
   border-radius: 999px;
   height: 40px;
   width: 40px;
   float: left;
 }
-.layout-centered .big-retail-circle:hover {
+.layout-centered .vendor .--circle-big:hover {
   background-color: red;
 }
-.layout-centered .link {
+.layout-centered .vendor .--name {
   padding: 10px 0 0 50px;
 }
-.layout-centered .retail-link {
-  width: 40%;
-  display: inline-block;
-  text-align: left;
-}
-.layout-centered .centered {
+.layout-centered .--centered {
   text-align: center;
 }
 @media (min-width:992px) {
@@ -7004,7 +7017,7 @@ footer {
   .logo .logo__image {
     width: 250px;
   }
-  .layout-centered .centered {
+  .layout-centered .--centered {
     text-align: center;
   }
 }
