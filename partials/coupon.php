@@ -1,0 +1,12 @@
+<div class="cutout">
+  <div class="cutout__details">
+    <h1 class="cutout__headline"><?= $couponPrice ? $couponPrice : "SEE DETAILS" ?> </h1>
+
+    <h4>on <?= $companyName." ".$product ?></h4>
+  </div>
+
+  <button class="btn btn-primary btn-brand">
+    GET COUPON NOW
+  </button>
+
+</div>
