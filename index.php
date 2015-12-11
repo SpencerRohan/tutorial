@@ -10,11 +10,7 @@
     <?php
       $companyName = "ACME";
       $couponPrice = "$6.00 OFF!";
-      $vendors = [ "Venture" => "'#'",
-                   "Zayre" => "'#'",
-                   "Woolworth" => "'#'",
-                   "Marshall Field's" => "'#'",
-                   "Bamberger's" => "'#'" ];
+
 
     function circleSize($count, $size) {
         if ($count == 0) {
@@ -118,42 +114,11 @@
         <div class="col-md-6 col-sm-12 col-md-pull-6 --card -divider-right">
           <h3>Available at these Fine Retailers</h3>
           <div class="row vendor">
-
-              <?php
-                $i=-1;
-                if (count($vendors > 0)):
-                  foreach ($vendors as $name => $link):
-                    $size = $centered ? circleSize($i, $size) : " ";
-                ?>
-                  <div class="vendor__link">
-                    <a href= <?= $link ?> class='btn'>
-                      <div class="<?= '--circle'.$size ?>"></div>
-                      <div class="vendor__name"><?= $name ?></div>
-                    </a>
-                  </div>
-              <?php
-                $i == 1 ? $i = 0 : $i++;
-                endforeach;
-                else:
-              ?>
-                <h3>Check back soon!</h3>
-              <? endif;
-                if ($centered && count($vendors) % 2 != 0 ): ?>
-                <div class="vendor__link -cursor-auto">
-                  <div class='btn -cursor-auto'>
-                    <div class='--circle-spacer'></div>
-                    <div class='vendor__name'></div>
-                  </div>
-                </div>
-              <? endif; ?>
-
+            <? include 'assets/partials/_retailers.php'; ?>
           </div>
         </div>
-
       </div>
     </div>
-
-
 
   </body>
 
