@@ -48,16 +48,19 @@ Confident in coding scale 1-10, Phase 2 was about an 7. There was a lot of new c
 Comp Reference:
 ![image](assets/images/landing-page-alt.jpg)
 
+I enjoyed the challenge in this phase. I think my clean up definitly reflects more of what I should aim for as common practice. I have yet to implement changes based on Adam's forked/pull request. I did review his changes, and they all make sense to me. I'll try and jump back to this any downtime durng the back-end tracks.
+
 ##### Questions and Topics:
 
 + Gulp usage, is setting up builders useful? - Answered
 + Pulling the site into sections - php or otherwise. - Touched on with Scott
 + Incoroperating an actual database - would you query using PHP?
 + Are Gulp helper files a thing? - Answered
-+ Gulp practical uses outside of development.
-+ Thoughts on naming conventions and clean code practices.
-+ Ways to improve building/adjusting - any general notes?
++ Gulp practical uses outside of development. - Answered
++ Thoughts on naming conventions and clean code practices. - Answered
++ Ways to improve building/adjusting - any general notes? - Answered
 
 
 Would love any notes, feedback, and guidence on html & css practices. Anything look super hacky or amateur hour?
 
+Confident in coding scale 1-10, Phase 3 was about an 8. I started to find my rythem in this section. Another day or so on it I think it would be super clean.  I got stuck a few times as far as incorporating php and naming conventions - but overall nothing a bit of practice/experience won't wash away.
