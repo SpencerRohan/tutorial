@@ -1,3 +1,21 @@
+<?php
+  include 'assets/partials/_themes.php';
+  $companyName = "ACME";
+  $couponPrice = "$6.00 OFF!";
+  $code = 'glue';
+  //$code = anvil | glue | jet_propelled_unicycle
+
+
+  function circleSize($count, $size) {
+    if ($count == 0) {
+      $size = ($size == '-big' ? ' ' : '-big');
+    }
+    return $size;
+  };
+?>
+
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,30 +24,12 @@
 
     <title>ACME</title>
 
-
-    <?php
-      include 'assets/partials/_themes.php';
-      $companyName = "ACME";
-      $couponPrice = "$6.00 OFF!";
-      $code = 'glue';
-      //$code = anvil | glue | jet_propelled_unicycle
-
-
-      function circleSize($count, $size) {
-        if ($count == 0) {
-          $size = ($size == '-big' ? ' ' : '-big');
-        }
-        return $size;
-      };
-    ?>
-
-
     <link rel="stylesheet" type="text/css" href="assets/css/site.css">
-    <script src="assets/js/site.js" type="text/javascript"></script>
-
     <style>
       <? include 'assets/css/style.php'; ?>
     </style>
+
+
   </head>
 
   <body class="<?= 'layout-'.$layout ?>">
@@ -112,15 +112,18 @@
         </div>
       </div>
     </div>
+
+
+    <footer>
+      <div class="container">
+        <a href="#" alt="HOME">Home</a> |
+        <a href="#" alt= "Privacy Policy">Privacy Policy</a> |
+        <a href="#" alt="Contact">Contact Us</a>
+      </div>
+    </footer>
+
+    <script src="assets/js/site.js" type="text/javascript"></script>
+
   </body>
-
-  <footer>
-    <div class="container">
-      <a href="#" alt="HOME">Home</a> |
-      <a href="#" alt= "Privacy Policy">Privacy Policy</a> |
-      <a href="#" alt="Contact">Contact Us</a>
-    </div>
-  </footer>
-
 </html>
 
