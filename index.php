@@ -20,7 +20,7 @@
   $themeData = [
     'anvil'=> [
       'product'  => 'Anvil',
-      'layout'   => 'default',
+      'layout'   => 'centered',
       'theme'    => ['hex'   => '#981b1e',
                      'color' => 'red',
                      'headline' => 'ralewayextrabold',
