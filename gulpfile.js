@@ -4,16 +4,6 @@ var gulp   = require('gulp'),
     insert = require('gulp-insert');
     replace = require('gulp-replace');
 
-// gulp.task('process-variables', function(){
-//     themes.forEach(function(theme) {
-//       gulp.src(['./src/less/_variables-' + theme.name + '.less'])
-//         .pipe(replace(/./g, ''))
-//         .pipe(insert.prepend( theme.writeLess() ))
-//         .pipe(concat('_variables-'+ theme.name + '.less'))
-//         .pipe(gulp.dest('src/less'))
-//     })
-// });
-
 gulp.task('process-less', function(){
   gulp.src(['src/less/_import.less'])
     .pipe(less())
