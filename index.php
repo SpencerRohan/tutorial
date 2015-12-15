@@ -20,7 +20,7 @@
   $themeData = [
     'anvil'=> [
       'product'  => 'Anvil',
-      'layout'   => 'default',
+      'layout'   => 'centered',
       'theme'    => ['hex'   => '#981b1e',
                      'color' => 'red',
                      'headline' => 'ralewayextrabold',
@@ -147,6 +147,16 @@
               <? foreach ($vendors as $name => $link): ?>
                 <?php include 'partials/retailers.php'; ?>
               <? endforeach; ?>
+
+
+              <? if ($layout == 'centered' && count($vendors) % 2 != 0 ): ?>
+                <div class="vendor__link -cursor-auto">
+                    <div class='btn -cursor-auto'>
+                      <div class='--circle-spacer'></div>
+                      <div class='vendor__name'></div>
+                    </div>
+                </div>
+              <? endif; ?>
 
             <?php else : ?>
               <h3>Check back soon!</h3>
